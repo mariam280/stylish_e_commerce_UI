@@ -12,14 +12,12 @@ class SignUpTextInForm extends StatelessWidget {
                 TextSpan(
                   text: "By clicking the",
                   style: AppStyles.stylesemiBold18(context).copyWith(
-                    color: Colors.black,
+                    color: Color(0xffC4C4C4),
                   ),
                 ),
                 TextSpan(
                   text: "Register",
-                  style: AppStyles.stylesemiBold18(context).copyWith(
-                    color: Color(0xffC4C4C4),
-                  ),
+                  style: AppStyles.stylesemiBold18(context)
                 ),
                  TextSpan(
                   text: " button, you agree\nto the public offer",

@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
+import 'package:stylish_e_commerce/modules/auth/presentation/screens/forgot_password_screen.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/login_screen.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/sign_up_screen.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/screens/on_boarding_screen.dart';
@@ -24,15 +25,15 @@ abstract class AppRouter {
         path: AppRouters.logIn,
         builder: (context, state) => const LoginScreen(),
       ),
+       GoRoute(
+        path: AppRouters.forgotPassword,
+        builder: (context, state) => const ForgotPasswordScreen(),
+      ),
       // GoRoute(
       //   path: AppRouters.homeLayout,
       //   builder: (context, state){
       //   return HomeLayout();
       //  },
-      // ),
-      //  GoRoute(
-      //   path: AppRouters.myCart,
-      //   builder: (context, state) => const MyCartScreen(),
       // ),
     ],
   );

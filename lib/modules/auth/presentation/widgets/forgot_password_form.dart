@@ -5,25 +5,22 @@ import 'package:stylish_e_commerce/core/helper/validation.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
-import 'package:stylish_e_commerce/core/widgets/custom_text_button.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_text_feild.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 
-class LoginForm extends StatefulWidget {
-  const LoginForm({super.key});
+class ForgotPasswordForm extends StatefulWidget {
+  const ForgotPasswordForm({super.key});
 
   @override
-  State<LoginForm> createState() => _LoginFormState();
+  State<ForgotPasswordForm> createState() => _ForgotPasswordFormState();
 }
 
-class _LoginFormState extends State<LoginForm> {
+class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
   GlobalKey<FormState> formKey = GlobalKey();
   TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
   @override
   void dispose() {
     emailController.dispose();
-    passwordController.dispose();
     super.dispose();
   }
 
@@ -32,6 +29,7 @@ class _LoginFormState extends State<LoginForm> {
     return Form(
       key: formKey,
       child: Column(
+        spacing: 40,
         children: [
           CustomTextFormField(
             validator: (p0) => Validations.validateEmail(
@@ -39,37 +37,29 @@ class _LoginFormState extends State<LoginForm> {
               emailController.text,
             ),
             controller: emailController,
-            hint: 'Email',
-            prefixIcon: Icons.person,
+            hint: 'Enter your Email Adress',
+            prefixIcon: Icons.email,
           ),
-          CustomSize(h: 20),
-          CustomTextFormField(
-            validator: (p0) => Validations.validatePassword(
-              context,
-              passwordController.text,
-            ),
-            controller: passwordController,
-            hint: 'Password',
-            prefixIcon: Icons.lock,
-            suffixIcon: Icons.visibility_outlined,
-          ),
-          CustomSize(
-            h: 8,
-          ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: CustomTextButton(
-              text: 'Forgot password?',
-              onPressed: () {
-                GoRouter.of(context).go(AppRouters.forgotPassword);
-              },
-              textStyle: AppStyles.stylesRegular12(context)
-                  .copyWith(color: Color(0xffF83758)),
+          CustomSize(h:20),
+          RichText(
+            text: TextSpan(
+              children: [
+                TextSpan(
+                  text: "*",
+                  style: AppStyles.stylesemiBold18(context)   
+                ),
+                TextSpan(
+                  text: " We will send you a message to set or reset\nyour new password",
+                  style: AppStyles.stylesemiBold18(context).copyWith(
+                    color: Color(0xffC4C4C4),
+                  ),
+                ),
+              ],
             ),
           ),
-          CustomSize(h: MediaQuery.sizeOf(context).height * 0.09),
+          CustomSize(h:MediaQuery.sizeOf(context).height*0.09),
           CustomButon(
-            text: 'Login',
+            text: 'Submit',
             onTap: () {
               if (formKey.currentState!.validate()) {
                 GoRouter.of(context).go(AppRouters.homeLayout);
@@ -77,7 +67,6 @@ class _LoginFormState extends State<LoginForm> {
             },
             color: AppColors.primaryColor,
           ),
-          CustomSize(h: MediaQuery.sizeOf(context).height * 0.1),
         ],
       ),
     );
