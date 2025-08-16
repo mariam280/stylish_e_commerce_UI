@@ -16,7 +16,7 @@ class OnboardItem extends StatelessWidget {
         children: [
           Image.asset(
             image,
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
           ),
           Text(title,style: AppStyles.styleExtraBold24(context),),
           Text(description,textAlign: TextAlign.center,style: AppStyles.stylesemiBold14(context),),

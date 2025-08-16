@@ -8,7 +8,7 @@ class CustomDotIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
-      width: isActive ? 40 : 6,
+      width: isActive ? 35 : 8,
       height: 8,
       decoration: ShapeDecoration(
         color: isActive ? Colors.black : const Color(0xFFC4C4C4),

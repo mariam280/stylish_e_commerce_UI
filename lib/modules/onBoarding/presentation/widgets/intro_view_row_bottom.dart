@@ -29,7 +29,7 @@ class IntroViewRowBottom extends StatelessWidget {
             onTap: onTapBack,
             child: Text(
               back,
-              style: AppStyles.stylesMedium18(context).copyWith(
+              style: AppStyles.stylesemiBold18(context).copyWith(
                 color: Color(0xffC4C4C4),
               ),
             ),

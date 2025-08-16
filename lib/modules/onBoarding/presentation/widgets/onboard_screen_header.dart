@@ -14,25 +14,26 @@ class OnboardScreenHeader extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: "$pageNumber",
-                    style: AppStyles.stylesemiBold18(context).copyWith(
-                color: Colors.black,
-              ),
+            text: TextSpan(
+              children: [
+                TextSpan(
+                  text: "$pageNumber",
+                  style: AppStyles.stylesemiBold18(context).copyWith(
+                    color: Colors.black,
                   ),
-                  TextSpan(
-                    text: "/3",
-                    style: AppStyles.stylesemiBold18(context).copyWith(
-                color: Color(0xffC4C4C4),
-              ),
+                ),
+                TextSpan(
+                  text: "/3",
+                  style: AppStyles.stylesemiBold18(context).copyWith(
+                    color: Color(0xffC4C4C4),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
+          ),
           InkWell(
             onTap: () {
+              //context.go(AppRouters.logIn);
               GoRouter.of(context).go(AppRouters.logIn);
             },
             child: Text(
