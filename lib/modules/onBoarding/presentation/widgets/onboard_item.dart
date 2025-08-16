@@ -19,7 +19,7 @@ class OnboardItem extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           Text(title,style: AppStyles.styleExtraBold24(context),),
-          Text(description,style: AppStyles.stylesemiBold14(context),),
+          Text(description,textAlign: TextAlign.center,style: AppStyles.stylesemiBold14(context),),
         ],
       ),
     );

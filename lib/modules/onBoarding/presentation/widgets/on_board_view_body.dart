@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/login_screen.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/widgets/intro_view_row_bottom.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/widgets/onboard_item_page_view.dart';
+import 'package:stylish_e_commerce/modules/onBoarding/presentation/widgets/onboard_screen_header.dart';
 
 class OnBoardViewBody extends StatelessWidget {
   const OnBoardViewBody({super.key});
@@ -41,6 +42,11 @@ class _OnBoardPageViewState extends State<OnBoardPageView> {
         OnboardItemPageView(
           pageController: pageController,
         ),
+        Positioned(
+           right: 10,
+            left: 10,
+            top: 20,
+          child: OnboardScreenHeader(pageNumber: currentPageIndex+1)),
         Positioned(
             right: 10,
             left: 10,
