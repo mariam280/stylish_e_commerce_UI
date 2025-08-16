@@ -49,7 +49,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
                 ),
                 TextSpan(
                   text: " We will send you a message to set or reset\nyour new password",
-                  style: AppStyles.stylesRegular12(context).copyWith(
+                  style: AppStyles.stylesRegular14(context).copyWith(
                     color: Color(0xffC4C4C4),
                   ),
                 ),

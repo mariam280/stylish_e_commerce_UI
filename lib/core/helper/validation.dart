@@ -12,7 +12,7 @@ abstract class Validations {
 
   static String? validateEmail(BuildContext context, String? email) {
     if (email!.isEmpty || !AppRegExp.isEmailValid(email)) {
-      return '🔴Email is required!';
+      return '🔴Enter valid email!';
     } else if (!email.contains('@')) {
       return '🔴Invalid Email!';
     }
@@ -28,7 +28,7 @@ abstract class Validations {
 
   static String? validatePassword(BuildContext context, String? password) {
     if (password!.isEmpty || !AppRegExp.isPasswordValid(password)) {
-      return '🔴Password is required!';
+      return '🔴Password must be include letters, numbers,\n    and special characters!';
     }
     return null;
   }

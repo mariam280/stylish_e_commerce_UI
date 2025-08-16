@@ -60,7 +60,7 @@ abstract class AppStyles {
   static TextStyle stylesRegular12(BuildContext context) {
     return TextStyle(
       color: Colors.black,
-      fontSize: getResponsiveFontSize(context, fontSize: 14), //(10,black),
+      fontSize: getResponsiveFontSize(context, fontSize: 12), //(10,black),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );

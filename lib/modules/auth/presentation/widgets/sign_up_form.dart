@@ -68,7 +68,7 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           CustomSize(h: 16),
           SignUpTextInForm(),
-          CustomSize(h: MediaQuery.sizeOf(context).height * 0.05),
+          CustomSize(h: MediaQuery.sizeOf(context).height * 0.04),
           CustomButon(
             text: 'Create account',
             onTap: () {
@@ -78,7 +78,7 @@ class _SignUpFormState extends State<SignUpForm> {
             },
             color: AppColors.primaryColor,
           ),
-          CustomSize(h: MediaQuery.sizeOf(context).height * 0.06),
+          CustomSize(h: MediaQuery.sizeOf(context).height * 0.05),
         ],
       ),
     );
