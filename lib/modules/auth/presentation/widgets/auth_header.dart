@@ -6,6 +6,8 @@ class AuthHeader extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return  Text(title,style: AppStyles.styleBold36(context),);
+    return  Align(
+      alignment: Alignment.centerLeft,
+      child: Text(title,style: AppStyles.styleBold36(context),));
   }
 }

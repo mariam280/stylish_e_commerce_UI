@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_e_commerce/core/themes/app_colors.dart';
+import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
@@ -30,11 +30,11 @@ class CustomTextFormField extends StatelessWidget {
       obscureText: isObscure,
       decoration: InputDecoration(
         hintText: hint,
-        hintStyle: TextStyle(color: AppColors.secondaryColor, fontSize: 16),
+        hintStyle: AppStyles.stylesMedium16(context).copyWith(color: Color(0xff676767)),
         suffixIcon: Icon(suffixIcon),
         prefixIcon: Icon(prefixIcon),
         filled: true,
-        fillColor: Color.fromARGB(133, 70, 77, 94),
+        fillColor: Color(0xffEDEDED),
         border: border(),
         focusedBorder: border(),
         enabledBorder: border(),
@@ -44,8 +44,8 @@ class CustomTextFormField extends StatelessWidget {
 
   OutlineInputBorder border() {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(16),
-      borderSide: BorderSide.none,
+      borderRadius: BorderRadius.circular(8),
+      borderSide: BorderSide(color: Colors.grey,width: 1),
     );
   }
 }

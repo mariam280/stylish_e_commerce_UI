@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/helper/validation.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
@@ -31,7 +32,6 @@ class _LoginFormState extends State<LoginForm> {
     return Form(
       key: formKey,
       child: Column(
-        spacing: 20,
         children: [
           CustomTextFormField(
             validator: (p0) => Validations.validateEmail(
@@ -40,8 +40,9 @@ class _LoginFormState extends State<LoginForm> {
             ),
             controller: emailController,
             hint: 'Email',
-            suffixIcon: Icons.person,
+            prefixIcon: Icons.person,
           ),
+          CustomSize(h:20),
           CustomTextFormField(
             validator: (p0) => Validations.validatePassword(
               context,
@@ -49,8 +50,8 @@ class _LoginFormState extends State<LoginForm> {
             ),
             controller: passwordController,
             hint: 'Password',
-            suffixIcon: Icons.lock,
-            prefixIcon: Icons.visibility_outlined,
+            prefixIcon: Icons.lock,
+            suffixIcon: Icons.visibility_outlined,
           ),
           CustomSize(h: 8,),
           Align(
@@ -58,10 +59,10 @@ class _LoginFormState extends State<LoginForm> {
             child: CustomTextButton(
               text: 'Forgot password?',
               onPressed: () {},
-              color: AppColors.primaryColor,
+              textStyle: AppStyles.stylesRegular12(context).copyWith(color: Color(0xffF83758)),
             ),
           ),
-          CustomSize(h:40),
+          CustomSize(h:MediaQuery.sizeOf(context).height*0.09),
           CustomButon(
             text: 'Login',
             onTap: () {
@@ -71,7 +72,7 @@ class _LoginFormState extends State<LoginForm> {
             },
             color: AppColors.primaryColor,
           ),
-           CustomSize(h:40),
+           CustomSize(h:MediaQuery.sizeOf(context).height*0.1),
         ],
       ),
     );

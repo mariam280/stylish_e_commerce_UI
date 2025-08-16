@@ -51,7 +51,7 @@ abstract class AppStyles {
     return TextStyle(
       color: Color(0xff575757),
       fontSize: getResponsiveFontSize(context,
-          fontSize: 14), //(12,#676767,primaryColor)
+          fontSize: 14),     //(12,#676767,primaryColor)
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );

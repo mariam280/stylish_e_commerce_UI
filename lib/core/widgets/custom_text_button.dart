@@ -4,11 +4,11 @@ class CustomTextButton extends StatelessWidget {
   const CustomTextButton({
     super.key,
     required this.text,
-    required this.onPressed, this.color,
+    required this.onPressed, required this.textStyle,
   });
   final String text;
   final Function() onPressed;
-  final Color? color;
+  final TextStyle textStyle;
   @override
   Widget build(BuildContext context) {
     return TextButton(
@@ -21,7 +21,7 @@ class CustomTextButton extends StatelessWidget {
       onPressed: onPressed,
       child: Text(
         text,
-        style: TextStyle(fontSize: 14, color: color),
+        style: textStyle,
       ),
     );
   }

@@ -10,10 +10,10 @@ class CustomButon extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 20),
+       // margin: const EdgeInsets.symmetric(horizontal: 20),
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(6),
         ),
         height: 60,
         child: Center(
