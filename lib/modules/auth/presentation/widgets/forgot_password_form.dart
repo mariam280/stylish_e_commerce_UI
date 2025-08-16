@@ -29,7 +29,6 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
     return Form(
       key: formKey,
       child: Column(
-        spacing: 40,
         children: [
           CustomTextFormField(
             validator: (p0) => Validations.validateEmail(
@@ -50,14 +49,14 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
                 ),
                 TextSpan(
                   text: " We will send you a message to set or reset\nyour new password",
-                  style: AppStyles.stylesemiBold18(context).copyWith(
+                  style: AppStyles.stylesRegular12(context).copyWith(
                     color: Color(0xffC4C4C4),
                   ),
                 ),
               ],
             ),
           ),
-          CustomSize(h:MediaQuery.sizeOf(context).height*0.09),
+          CustomSize(h:MediaQuery.sizeOf(context).height*0.06),
           CustomButon(
             text: 'Submit',
             onTap: () {
