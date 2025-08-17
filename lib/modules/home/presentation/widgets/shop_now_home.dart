@@ -26,7 +26,7 @@ class _ShopNowHomeState extends State<ShopNowHome> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.sizeOf(context).height*0.25,
+      height: MediaQuery.sizeOf(context).height*0.26,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
