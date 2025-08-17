@@ -9,11 +9,14 @@ class HomeScreen extends StatelessWidget {
     return CustomBackground(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 40),
-        child: CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(child: Text('HomeView...'),),
-          ],
-        ),
+        child: Column(children: [
+          Text('HomeView...'),
+        ],),
+        // child: CustomScrollView(
+        //   slivers: [
+        //     SliverToBoxAdapter(child: Text('HomeView...'),),
+        //   ],
+        // ),
       ));
   }
 }

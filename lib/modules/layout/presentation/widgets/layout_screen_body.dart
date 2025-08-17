@@ -43,7 +43,7 @@ class _LayoutScreenBodyState extends State<LayoutScreenBody> {
             bottom: 0,
             left: 0,
             right: 0,
-            child: CustomNavBar(onTap: onTap, currentIndex: currentIndex))
+            child: CustomNavBar(onTap: onTap, currentIndex: currentIndex)),
       ],
     );
   }

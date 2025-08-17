@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/modules/layout/presentation/widgets/main_nav_icon_cart.dart';
 
 import 'main_nav_icon.dart';
 
@@ -10,33 +11,39 @@ class CustomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 375 / 76,
+      aspectRatio: 375 / 85,
       child: Container(
-        color: Colors.white,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            MainNavIcon(
+        color: Color(0xffF9F9F9),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              MainNavIcon(
                 onTap: () => onTap(0),
                  text: 'home',
                  icon: Icons.home_outlined,
                 isActive: currentIndex == 0),
-            MainNavIcon(
+                          MainNavIcon(
                 onTap: () => onTap(1),
                text: 'wishlist',
                  icon: Icons.favorite_outline,
                 isActive: currentIndex == 1),
-            MainNavIcon(
+              MainNavIconCart(
                 onTap: () => onTap(2),
-                text: 'search',
-                 icon: Icons.search,
-                isActive: currentIndex == 2),
-            MainNavIcon(
-                onTap: () => onTap(3),
-                text: 'setting',
-                 icon: Icons.settings_outlined,
-                isActive: currentIndex == 3),
-          ],
+                isActive: currentIndex==2),
+                  MainNavIcon(
+                                  onTap: () => onTap(3),
+                                  text: 'search',
+                                   icon: Icons.search,
+                                  isActive: currentIndex == 3),
+                              MainNavIcon(
+                                  onTap: () => onTap(4),
+                                  text: 'setting',
+                                   icon: Icons.settings_outlined,
+                                  isActive: currentIndex == 4)
+            ],
+          ),
         ),
       ),
     );
