@@ -71,10 +71,9 @@ class _LoginFormState extends State<LoginForm> {
           CustomButon(
             text: 'Login',
             onTap: () {
-              GoRouter.of(context).go(AppRouters.getStart);
-              // if (formKey.currentState!.validate()) {
-                
-              // }
+              if (formKey.currentState!.validate()) {
+                GoRouter.of(context).go(AppRouters.getStart);
+              }
             },
             color: AppColors.primaryColor,
           ),

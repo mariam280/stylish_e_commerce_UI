@@ -6,15 +6,14 @@ import 'package:stylish_e_commerce/modules/auth/presentation/screens/sign_up_scr
 import 'package:stylish_e_commerce/modules/layout/presentation/screens/get_start_screen.dart';
 import 'package:stylish_e_commerce/modules/layout/presentation/screens/layout_screen.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/screens/on_boarding_screen.dart';
-import 'package:stylish_e_commerce/modules/splash/presentation/screens/splash_screen.dart';
 
 abstract class AppRouter {
   static final goRouter = GoRouter(
     routes: [
-      GoRoute(
-        path: AppRouters.splash,
-        builder: (context, state) => const SplashScreen(),
-      ),
+      // GoRoute(
+      //   path: AppRouters.splash,
+      //   builder: (context, state) => const SplashScreen(),
+      // ),
       GoRoute(
         path: AppRouters.onboarding,
         builder: (context, state) => const OnBoardingScreen(),

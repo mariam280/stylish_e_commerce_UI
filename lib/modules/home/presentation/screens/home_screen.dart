@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_background.dart';
+import 'package:stylish_e_commerce/modules/home/presentation/widgets/home_screen_body.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,16 +8,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomBackground(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 40),
-        child: Column(children: [
-          Text('HomeView...'),
-        ],),
-        // child: CustomScrollView(
-        //   slivers: [
-        //     SliverToBoxAdapter(child: Text('HomeView...'),),
-        //   ],
-        // ),
-      ));
+      child: SafeArea(child: HomeScreenBody()),
+    );
   }
 }
