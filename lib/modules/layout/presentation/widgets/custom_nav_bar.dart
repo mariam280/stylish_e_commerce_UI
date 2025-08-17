@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/modules/layout/presentation/widgets/main_nav_icon_cart.dart';
-
 import 'main_nav_icon.dart';
-
 class CustomNavBar extends StatelessWidget {
   const CustomNavBar(
       {super.key, required this.onTap, required this.currentIndex});
@@ -13,9 +11,17 @@ class CustomNavBar extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 375 / 85,
       child: Container(
-        color: Color(0xffF9F9F9),
-        child: Padding(
-          padding: const EdgeInsets.only(top: 8),
+        decoration: const BoxDecoration(
+          color: Colors.white,
+          border: Border(
+          top: BorderSide(
+          color: Color(0xffA8A8A9), 
+          width: 0.3,           
+            ),
+          ),
+        ),
+        child:  Padding(
+          padding: const EdgeInsets.only(top: 8,left:16,right:16),
           child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -29,19 +35,22 @@ class CustomNavBar extends StatelessWidget {
                text: 'wishlist',
                  icon: Icons.favorite_outline,
                 isActive: currentIndex == 1),
-              MainNavIconCart(
-                onTap: () => onTap(2),
-                isActive: currentIndex==2),
+              Transform.translate(
+                offset: Offset(0, -27),
+                child: MainNavIconCart(
+                  onTap: () => onTap(2),
+                  isActive: currentIndex==2),
+              ),
                   MainNavIcon(
-                                  onTap: () => onTap(3),
-                                  text: 'search',
-                                   icon: Icons.search,
-                                  isActive: currentIndex == 3),
-                              MainNavIcon(
-                                  onTap: () => onTap(4),
-                                  text: 'setting',
-                                   icon: Icons.settings_outlined,
-                                  isActive: currentIndex == 4)
+                       onTap: () => onTap(3),
+                       text: 'search',
+                        icon: Icons.search,
+                       isActive: currentIndex == 3),
+                   MainNavIcon(
+                       onTap: () => onTap(4),
+                       text: 'setting',
+                        icon: Icons.settings_outlined,
+                       isActive: currentIndex == 4),
             ],
           ),
         ),
@@ -49,3 +58,4 @@ class CustomNavBar extends StatelessWidget {
     );
   }
 }
+ 

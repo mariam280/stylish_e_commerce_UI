@@ -7,20 +7,17 @@ class MainNavIconCart extends StatelessWidget {
   final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 18),
-      child: GestureDetector(
-        onTap: onTap,
-        child: Card(
-          color: Colors.white,
-          shape: const CircleBorder(),
-          elevation: 6, // درجة الظل
-          shadowColor: Colors.black.withValues(alpha: 0.3),
-          child: Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Icon(Icons.shopping_cart_checkout_outlined,
-                color: isActive ? AppColors.primaryColor : Colors.black),
-          ),
+    return GestureDetector(
+      onTap: onTap,
+      child: Card(
+        color: Colors.white,
+        shape: const CircleBorder(),
+        elevation: 6, // درجة الظل
+        shadowColor: Colors.black.withValues(alpha: 0.3),
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Icon(Icons.shopping_cart_checkout_outlined,
+              color: isActive ? AppColors.primaryColor : Colors.black),
         ),
       ),
     );
