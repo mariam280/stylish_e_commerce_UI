@@ -4,7 +4,7 @@ import 'package:stylish_e_commerce/stylish_e_commerce.dart';
 
 void main() {
   runApp(DevicePreview(
-    enabled: true,
+    enabled: false,
     builder:(context) => const StylishECommerce()));
 }
 
