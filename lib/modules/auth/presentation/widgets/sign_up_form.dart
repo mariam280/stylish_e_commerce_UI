@@ -72,9 +72,10 @@ class _SignUpFormState extends State<SignUpForm> {
           CustomButon(
             text: 'Create account',
             onTap: () {
-              if (formKey.currentState!.validate()) {
-                GoRouter.of(context).go(AppRouters.homeLayout);
-              }
+               GoRouter.of(context).go(AppRouters.getStart);
+              // if (formKey.currentState!.validate()) {
+               
+              // }
             },
             color: AppColors.primaryColor,
           ),

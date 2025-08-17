@@ -47,6 +47,15 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle stylesemiBold34(BuildContext context) {
+    return TextStyle(
+      color: Colors.white, 
+      fontSize: getResponsiveFontSize(context, fontSize: 34), 
+      fontFamily: 'Montserrat',
+      fontWeight: FontWeight.w600,
+    );
+  }
+
   static TextStyle stylesRegular14(BuildContext context) {
     return TextStyle(
       color: Color(0xff575757),

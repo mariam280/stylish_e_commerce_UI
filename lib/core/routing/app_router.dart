@@ -3,6 +3,7 @@ import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/forgot_password_screen.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/login_screen.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/sign_up_screen.dart';
+import 'package:stylish_e_commerce/modules/layout/presentation/screens/get_start_screen.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/screens/on_boarding_screen.dart';
 import 'package:stylish_e_commerce/modules/splash/presentation/screens/splash_screen.dart';
 
@@ -28,6 +29,10 @@ abstract class AppRouter {
        GoRoute(
         path: AppRouters.forgotPassword,
         builder: (context, state) => const ForgotPasswordScreen(),
+      ),
+      GoRoute(
+        path: AppRouters.getStart,
+        builder: (context, state) => const GetStartScreen(),
       ),
       // GoRoute(
       //   path: AppRouters.homeLayout,

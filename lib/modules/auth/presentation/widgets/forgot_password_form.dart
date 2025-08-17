@@ -61,7 +61,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
             text: 'Submit',
             onTap: () {
               if (formKey.currentState!.validate()) {
-                GoRouter.of(context).go(AppRouters.homeLayout);
+                GoRouter.of(context).go(AppRouters.logIn);
               }
             },
             color: AppColors.primaryColor,
