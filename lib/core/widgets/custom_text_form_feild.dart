@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 
-class CustomTextField extends StatelessWidget {
-  const CustomTextField({
+class CustomTextFormField extends StatelessWidget {
+  const CustomTextFormField({
     super.key,
     this.hint,
     this.isObscure = false,
     this.keyboardType,
     this.maxLines = 1,
+    this.validator,
     this.controller, this.suffixIcon, this.prefixIcon,
   });
   final String? hint;
   final bool isObscure;
   final TextInputType? keyboardType;
   final int? maxLines;
+  final String? Function(String?)? validator;
   final TextEditingController? controller;
   final IconData? suffixIcon;
   final IconData? prefixIcon;
@@ -21,18 +23,18 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      validator: validator,
       onTapOutside: (_) => FocusManager.instance.primaryFocus?.unfocus(),
       maxLines: maxLines,
       keyboardType: keyboardType,
       obscureText: isObscure,
       decoration: InputDecoration(
-        isDense: true,
         hintText: hint,
-        hintStyle: AppStyles.stylesMedium16(context).copyWith(color: Color(0xffA8A8A9)),
-        suffixIcon: Icon(suffixIcon,color:Color(0xffA8A8A9)),
-        prefixIcon: Icon(prefixIcon,color: Color(0xffA8A8A9)),
+        hintStyle: AppStyles.stylesMedium16(context).copyWith(color: Color(0xff676767)),
+        suffixIcon: Icon(suffixIcon),
+        prefixIcon: Icon(prefixIcon),
         filled: true,
-        fillColor: Colors.white,
+        fillColor: Color(0xffEDEDED),
         border: border(),
         focusedBorder: border(),
         enabledBorder: border(),
@@ -42,8 +44,8 @@ class CustomTextField extends StatelessWidget {
 
   OutlineInputBorder border() {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(6),
-      borderSide: BorderSide(color: Colors.white,width: 1),
+      borderRadius: BorderRadius.circular(8),
+      borderSide: BorderSide(color: Colors.grey,width: 1),
     );
   }
 }

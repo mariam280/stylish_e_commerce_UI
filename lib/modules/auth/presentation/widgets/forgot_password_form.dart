@@ -5,7 +5,7 @@ import 'package:stylish_e_commerce/core/helper/validation.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
-import 'package:stylish_e_commerce/core/widgets/custom_text_feild.dart';
+import 'package:stylish_e_commerce/core/widgets/custom_text_form_feild.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 
 class ForgotPasswordForm extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_e_commerce/modules/home/presentation/widgets/home_header.dart';
+import 'package:stylish_e_commerce/modules/home/presentation/widgets/home_and_favorite_widget.dart';
 
 class HomeScreenBody extends StatelessWidget {
   const HomeScreenBody({super.key});
@@ -11,10 +11,11 @@ class HomeScreenBody extends StatelessWidget {
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: HomeHeader(),
+            child: HomeAndFavoriteWidget(),
           ),
         ],
       ),
     );
   }
 }
+
