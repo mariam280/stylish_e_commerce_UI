@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/modules/home/presentation/widgets/circle_categories.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/home_and_favorite_widget.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -13,9 +14,9 @@ class HomeScreenBody extends StatelessWidget {
           SliverToBoxAdapter(
             child: HomeAndFavoriteWidget(),
           ),
+          SliverToBoxAdapter(child: CircleCategories(),),
         ],
       ),
     );
   }
 }
-
