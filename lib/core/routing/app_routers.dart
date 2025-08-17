@@ -3,8 +3,8 @@ abstract class AppRouters {
   static const onboarding = '/OnboardingScreen';
   static const logIn = '/LogInScreen';
   static const signUp = '/SignUpScreen';
-  static const forgotPassword = '/forgotPassword';
-  static const homeLayout = '/HomeLayout';
-  static const myCart = '/cartScreen';
-   static const getStart = '/getStart';
+  static const forgotPassword = '/ForgotPassword';
+  static const layout = '/Layout';
+  static const myCart = '/CartScreen';
+   static const getStart = '/GetStart';
 }
