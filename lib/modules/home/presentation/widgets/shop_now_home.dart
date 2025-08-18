@@ -35,9 +35,9 @@ class _ShopNowHomeState extends State<ShopNowHome> {
         spacing: 8,
         children: [
           ExpandablePageView(controller: pageController, children: [
-            ShopNowImage(),
-            ShopNowImage(),
-            ShopNowImage(),
+            ShopNowImage(aspectRatio: 343 / 189,),
+            ShopNowImage(aspectRatio: 343 / 189,),
+            ShopNowImage(aspectRatio: 343 / 189,),
           ]),
           CustomDotShopNowList(currentPageIndex: currentPageIndex)
         ],

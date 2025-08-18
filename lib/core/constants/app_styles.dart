@@ -69,7 +69,7 @@ abstract class AppStyles {
   static TextStyle stylesRegular12(BuildContext context) {
     return TextStyle(
       color: Colors.black,
-      fontSize: getResponsiveFontSize(context, fontSize: 12), //(10),
+      fontSize: getResponsiveFontSize(context, fontSize: 12), //(10), 16
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );
@@ -78,7 +78,7 @@ abstract class AppStyles {
   static TextStyle stylesMedium16(BuildContext context) {
     return TextStyle(
       color: Colors.black,
-      fontSize: getResponsiveFontSize(context, fontSize: 16), //14
+      fontSize: getResponsiveFontSize(context, fontSize: 16), //14 ,20
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w500,
     );

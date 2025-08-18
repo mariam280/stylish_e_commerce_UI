@@ -162,6 +162,10 @@ class Assets {
   /// assets/images/uptosponsered.png
   static const String imagesUptosponsered = "assets/images/uptosponsered.png";
 
+  /// Assets for imagesViewAll
+  /// assets/images/view_all.png
+  static const String imagesViewAll = "assets/images/view_all.png";
+
   /// Assets for imagesVisa
   /// assets/images/visa.png
   static const String imagesVisa = "assets/images/visa.png";

@@ -4,6 +4,7 @@ import 'package:stylish_e_commerce/core/widgets/size.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/circle_categories.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/deal_of_the_day_product_list.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/home_and_favorite_widget.dart';
+import 'package:stylish_e_commerce/modules/home/presentation/widgets/hot_summer_sale.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/shop_now_home.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/trending_product_list.dart';
 
@@ -37,6 +38,8 @@ class HomeScreenBody extends StatelessWidget {
           SliverToBoxAdapter(child: Image.asset(Assets.imagesTrendingproduct,fit: BoxFit.contain,),),
           SliverToBoxAdapter(child: CustomSize(h:10),),
           SliverToBoxAdapter(child: TrendingProductList(),),
+          SliverToBoxAdapter(child: CustomSize(h:10),),
+          SliverToBoxAdapter(child: HotSummerSale(),),
           SliverToBoxAdapter(child: CustomSize(h:80),),
         ],
       ),
