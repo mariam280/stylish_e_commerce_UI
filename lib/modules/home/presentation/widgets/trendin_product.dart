@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/modules/home/data/models/card_model.dart';
-import 'package:stylish_e_commerce/modules/home/presentation/widgets/upper_home_card_info.dart';
+import 'package:stylish_e_commerce/modules/home/presentation/widgets/lower_home_card_info.dart';
 
-class DealOfTheDayProduct extends StatelessWidget {
-  const DealOfTheDayProduct({
+class TrendingProduct extends StatelessWidget {
+  const TrendingProduct({
     super.key,
     required this.cardModel,
   });
@@ -11,13 +11,12 @@ class DealOfTheDayProduct extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 170 / 241,
+      aspectRatio: 142 / 186,
       child: Card(
         color: Colors.white,
         elevation: 6, // درجة الظل
         shadowColor: Colors.black.withValues(alpha: 0.3),
-        child: UpperHomeCardInfo(
-          title: cardModel.title!,
+        child: LowerHomeCardInfo(
           description: cardModel.description,
           price: cardModel.price,
           image: cardModel.image,

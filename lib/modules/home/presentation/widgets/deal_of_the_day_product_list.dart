@@ -30,8 +30,11 @@ class DealOfTheDayProductList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: upperCards.length,
         itemBuilder: (context, index) {
-          return DealOfTheDayProduct(
-            cardModel: upperCards[index],
+          return GestureDetector(
+            onTap: (){},
+            child: DealOfTheDayProduct(
+              cardModel: upperCards[index],
+            ),
           );
         },
       ),
