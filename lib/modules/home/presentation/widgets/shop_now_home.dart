@@ -1,5 +1,6 @@
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/shop_now_image.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/widgets/custom_dot_shop_now_list.dart';
 
@@ -35,9 +36,9 @@ class _ShopNowHomeState extends State<ShopNowHome> {
         spacing: 8,
         children: [
           ExpandablePageView(controller: pageController, children: [
-            ShopNowImage(aspectRatio: 343 / 189,),
-            ShopNowImage(aspectRatio: 343 / 189,),
-            ShopNowImage(aspectRatio: 343 / 189,),
+            ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
+            ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
+            ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
           ]),
           CustomDotShopNowList(currentPageIndex: currentPageIndex)
         ],

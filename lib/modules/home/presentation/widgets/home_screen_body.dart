@@ -6,6 +6,7 @@ import 'package:stylish_e_commerce/modules/home/presentation/widgets/deal_of_the
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/home_and_favorite_widget.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/hot_summer_sale.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/shop_now_home.dart';
+import 'package:stylish_e_commerce/modules/home/presentation/widgets/sponsered_card.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/trending_product_list.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -40,6 +41,8 @@ class HomeScreenBody extends StatelessWidget {
           SliverToBoxAdapter(child: TrendingProductList(),),
           SliverToBoxAdapter(child: CustomSize(h:10),),
           SliverToBoxAdapter(child: HotSummerSale(),),
+          SliverToBoxAdapter(child: CustomSize(h:10),),
+          SliverToBoxAdapter(child: SponseredCard(),),
           SliverToBoxAdapter(child: CustomSize(h:80),),
         ],
       ),

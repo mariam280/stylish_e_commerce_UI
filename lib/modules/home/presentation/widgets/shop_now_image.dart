@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_e_commerce/core/constants/app_images.dart';
 
 class ShopNowImage extends StatelessWidget {
-  const ShopNowImage({super.key, required this.aspectRatio});
- final double aspectRatio;
+  const ShopNowImage({super.key, required this.aspectRatio, required this.image});
+  final double aspectRatio;
+  final String image;
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
@@ -11,7 +11,7 @@ class ShopNowImage extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: Image.asset(
-          Assets.imagesShopNow,
+          image,
           fit: BoxFit.fill,
         ),
       ),
