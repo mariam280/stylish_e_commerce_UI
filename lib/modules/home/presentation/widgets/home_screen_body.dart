@@ -15,7 +15,7 @@ class HomeScreenBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 16),
+      padding:  EdgeInsets.symmetric(horizontal: 12),
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
@@ -43,7 +43,7 @@ class HomeScreenBody extends StatelessWidget {
           SliverToBoxAdapter(child: HotSummerSale(),),
           SliverToBoxAdapter(child: CustomSize(h:10),),
           SliverToBoxAdapter(child: SponseredCard(),),
-          SliverToBoxAdapter(child: CustomSize(h:80),),
+          SliverToBoxAdapter(child: CustomSize(h:MediaQuery.sizeOf(context).height*0.07),),
         ],
       ),
     );

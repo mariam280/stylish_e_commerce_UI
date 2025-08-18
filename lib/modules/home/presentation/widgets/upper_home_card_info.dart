@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
-import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/deal_of_the_day_image.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/star_widget.dart';
 
@@ -10,9 +9,10 @@ class UpperHomeCardInfo extends StatelessWidget {
       required this.title,
       required this.description,
       required this.price,
-      required this.image});
+      required this.image, this.widget});
   final String title, description, image;
   final String price;
+  final Widget? widget;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,7 +21,10 @@ class UpperHomeCardInfo extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         spacing: 6,
         children: [
-          DealOfTheDayImage(image: image,aspectRatio: 170 / 124,),
+          DealOfTheDayImage(
+            image: image,
+            aspectRatio: 170 / 124,   //164/136
+          ),
           Text(
             title,
             style: AppStyles.stylesMedium16(context).copyWith(fontSize: 12),
@@ -36,25 +39,7 @@ class UpperHomeCardInfo extends StatelessWidget {
             '\$$price',
             style: AppStyles.stylesMedium16(context).copyWith(fontSize: 12),
           ),
-          RichText(
-            text: TextSpan(
-              children: [
-                TextSpan(
-                  text: r'$4999',
-                  style: AppStyles.stylesRegular12(context).copyWith(
-                    color: Color(0xff808488),
-                    decoration: TextDecoration.lineThrough,
-                  ),
-                ),
-                TextSpan(
-                  text: '  50%Off',
-                  style: AppStyles.stylesRegular12(context).copyWith(
-                    color: AppColors.primaryColor,
-                  ),
-                ),
-              ],
-            ),
-          ),
+          if(widget != null) widget!,
           StarWidget(),
         ],
       ),

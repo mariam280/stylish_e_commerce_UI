@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/modules/home/data/models/card_model.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/upper_home_card_info.dart';
 
@@ -21,6 +23,25 @@ class DealOfTheDayProduct extends StatelessWidget {
           description: cardModel.description,
           price: cardModel.price,
           image: cardModel.image,
+          widget: RichText(
+            text: TextSpan(
+              children: [
+                TextSpan(
+                  text: r'$4999',
+                  style: AppStyles.stylesRegular12(context).copyWith(
+                    color: Color(0xff808488),
+                    decoration: TextDecoration.lineThrough,
+                  ),
+                ),
+                TextSpan(
+                  text: '  50%Off',
+                  style: AppStyles.stylesRegular12(context).copyWith(
+                    color: AppColors.primaryColor,
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
