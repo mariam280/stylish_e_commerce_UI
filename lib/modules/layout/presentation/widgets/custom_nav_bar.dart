@@ -36,7 +36,7 @@ class CustomNavBar extends StatelessWidget {
                  icon: Icons.favorite_outline,
                 isActive: currentIndex == 1),
               Transform.translate(
-                offset: Offset(0, -27),
+                offset: Offset(0, -26),
                 child: MainNavIconCart(
                   onTap: () => onTap(2),
                   isActive: currentIndex==2),

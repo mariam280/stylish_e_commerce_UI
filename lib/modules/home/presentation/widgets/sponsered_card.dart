@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/widgets/custom_card.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/sponsered_card_info.dart';
 
 class SponseredCard extends StatelessWidget {
@@ -6,14 +7,8 @@ class SponseredCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 345 / 347,
-      child: Card(
-        color: Colors.white,
-        elevation: 4, // درجة الظل
-        shadowColor: Colors.black.withValues(alpha: 0.3),
-        child: SponseredCardInfo() ,
-      ),
-    );
+    return CustomCard(
+      aspectRatio: 345/347,
+      child: SponseredCardInfo());
   }
 }

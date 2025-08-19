@@ -7,9 +7,18 @@ class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomBackground(
-      child: const Column(children: [
-        Text('CartScreen...'),
-      ],),
+      child: SafeArea(child: CartScreenBody()),
     );
+  }
+}
+
+class CartScreenBody extends StatelessWidget {
+  const CartScreenBody({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: [
+      
+    ],);
   }
 }

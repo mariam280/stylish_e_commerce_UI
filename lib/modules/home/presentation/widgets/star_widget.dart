@@ -7,15 +7,25 @@ class StarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(children: [
-      ...List.generate(5, (index) => Icon(Icons.star, color: Colors.amber,size: 16,)),
-      CustomSize(h: 8,),
-      Text(r'  $344567',style: AppStyles.stylesRegular12(context).copyWith(
-                    color: Color(0xff808488),
-                   
-                  ),),
-    ]
-      
-    ,);
+    return Row(
+      children: [
+        ...List.generate(
+            5,
+            (index) => Icon(
+                  Icons.star,
+                  color: Colors.amber,
+                  size: 16,
+                )),
+        CustomSize(
+          h: 8,
+        ),
+        Text(
+          r'  $344567',
+          style: AppStyles.stylesRegular12(context).copyWith(
+            color: Color(0xff808488),
+          ),
+        ),
+      ],
+    );
   }
 }

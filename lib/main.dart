@@ -7,4 +7,3 @@ void main() {
     enabled: true,
     builder:(context) => const StylishECommerce()));
 }
-
