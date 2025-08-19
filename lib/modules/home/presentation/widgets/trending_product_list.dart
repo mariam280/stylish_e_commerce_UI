@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
+import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/modules/home/data/models/card_model.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/trendin_product.dart';
 
@@ -22,7 +24,6 @@ class TrendingProductList extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    // 
     return SizedBox(
       height: 190,
       child: ListView.builder(
@@ -30,7 +31,9 @@ class TrendingProductList extends StatelessWidget {
         itemCount: lowerCards.length,
         itemBuilder: (context, index) {
           return GestureDetector(
-            onTap: (){},
+            onTap: (){
+              GoRouter.of(context).go(AppRouters.cartDetails);
+            },
             child: TrendingProduct(
               cardModel: lowerCards[index],
             ),

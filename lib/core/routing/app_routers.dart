@@ -7,5 +7,6 @@ abstract class AppRouters {
   //static const layout = '/Layout';
   static const layout = '/';
   static const myCart = '/CartScreen';
+  static const cartDetails = '/CartDetails';
    static const getStart = '/GetStart';
 }
