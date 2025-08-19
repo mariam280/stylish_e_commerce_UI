@@ -3,7 +3,7 @@ import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/forgot_password_screen.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/login_screen.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/sign_up_screen.dart';
-import 'package:stylish_e_commerce/modules/home/presentation/screens/card_details_screen.dart';
+import 'package:stylish_e_commerce/modules/home/presentation/screens/shopping_bag_screen.dart';
 import 'package:stylish_e_commerce/modules/layout/presentation/screens/get_start_screen.dart';
 import 'package:stylish_e_commerce/modules/layout/presentation/screens/layout_screen.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/screens/on_boarding_screen.dart';
@@ -27,7 +27,7 @@ abstract class AppRouter {
         path: AppRouters.logIn,
         builder: (context, state) => const LoginScreen(),
       ),
-       GoRoute(
+      GoRoute(
         path: AppRouters.forgotPassword,
         builder: (context, state) => const ForgotPasswordScreen(),
       ),
@@ -37,9 +37,9 @@ abstract class AppRouter {
       ),
       GoRoute(
         path: AppRouters.cartDetails,
-        builder: (context, state) => const CardDetailsScreen(),
+        builder: (context, state) => const ShoppingBagScreen(),
       ),
-       GoRoute(
+      GoRoute(
         path: AppRouters.layout,
         builder: (context, state) => const Layoutscreen(),
       ),
