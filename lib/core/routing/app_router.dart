@@ -7,6 +7,7 @@ import 'package:stylish_e_commerce/modules/home/presentation/screens/shopping_ba
 import 'package:stylish_e_commerce/modules/layout/presentation/screens/get_start_screen.dart';
 import 'package:stylish_e_commerce/modules/layout/presentation/screens/layout_screen.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/screens/on_boarding_screen.dart';
+import 'package:stylish_e_commerce/modules/payment/presentation/screens/check_out_screen.dart';
 
 abstract class AppRouter {
   static final goRouter = GoRouter(
@@ -42,6 +43,10 @@ abstract class AppRouter {
       GoRoute(
         path: AppRouters.layout,
         builder: (context, state) => const Layoutscreen(),
+      ),
+      GoRoute(
+        path: AppRouters.checkOut,
+        builder: (context, state) => const CheckOutScreen(),
       ),
       // GoRoute(
       //   path: AppRouters.homeLayout,

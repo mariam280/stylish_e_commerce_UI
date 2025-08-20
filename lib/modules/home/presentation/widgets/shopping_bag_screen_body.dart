@@ -34,23 +34,3 @@ class ShoppingBagScreenBody extends StatelessWidget {
     );
   }
 }
-
-
-
-
-// class OrderPaymentDetailsText extends StatelessWidget {
-//   const OrderPaymentDetailsText({super.key, required this.title, required this.subTitle});
-//   final String title, subTitle;
-//   @override
-//   Widget build(BuildContext context) {
-//     return Row(
-//       children: [
-//         Text(
-//           title,
-//         ),
-//         Spacer(),
-//         Text(subTitle),
-//       ],
-//     );
-//   }
-// }
