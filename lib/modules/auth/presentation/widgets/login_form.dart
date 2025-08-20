@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
-import 'package:stylish_e_commerce/core/helper/validation.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
@@ -34,20 +33,30 @@ class _LoginFormState extends State<LoginForm> {
       child: Column(
         children: [
           CustomTextFormField(
-            validator: (p0) => Validations.validateEmail(
-              context,
-              emailController.text,
-            ),
+            validator: (value) {
+            if (value == null || value.isEmpty) {
+              return 'field is required';
+            }
+            if (!RegExp(r'^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value)) {
+              return 'Please enter a valid email';
+            }
+            return null;
+          },
             controller: emailController,
             hint: 'Email',
             prefixIcon: Icons.person,
           ),
           CustomSize(h: 20),
           CustomTextFormField(
-            validator: (p0) => Validations.validatePassword(
-              context,
-              passwordController.text,
-            ),
+            validator: (value) {
+            if (value == null || value.isEmpty) {
+              return 'field is required';
+            }
+            if (value.length < 6) {
+              return 'Password must be at least 6 characters';
+            }
+            return null;
+          },
             controller: passwordController,
             hint: 'Password',
             prefixIcon: Icons.lock,

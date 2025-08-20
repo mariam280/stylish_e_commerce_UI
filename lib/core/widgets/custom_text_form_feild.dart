@@ -9,7 +9,9 @@ class CustomTextFormField extends StatelessWidget {
     this.keyboardType,
     this.maxLines = 1,
     this.validator,
-    this.controller, this.suffixIcon, this.prefixIcon,
+    this.controller,
+    this.suffixIcon,
+    this.prefixIcon, this.fillColor,
   });
   final String? hint;
   final bool isObscure;
@@ -19,6 +21,7 @@ class CustomTextFormField extends StatelessWidget {
   final TextEditingController? controller;
   final IconData? suffixIcon;
   final IconData? prefixIcon;
+  final Color? fillColor;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -30,11 +33,12 @@ class CustomTextFormField extends StatelessWidget {
       obscureText: isObscure,
       decoration: InputDecoration(
         hintText: hint,
-        hintStyle: AppStyles.stylesMedium16(context).copyWith(color: Color(0xff676767)),
+        hintStyle: AppStyles.stylesMedium16(context)
+            .copyWith(color: Color(0xff676767)),
         suffixIcon: Icon(suffixIcon),
         prefixIcon: Icon(prefixIcon),
         filled: true,
-        fillColor: Color(0xffEDEDED),
+        fillColor:fillColor?? Color(0xffEDEDED),
         border: border(),
         focusedBorder: border(),
         enabledBorder: border(),
@@ -45,7 +49,7 @@ class CustomTextFormField extends StatelessWidget {
   OutlineInputBorder border() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
-      borderSide: BorderSide(color: Colors.grey,width: 1),
+      borderSide: BorderSide(color: Colors.grey, width: 1),
     );
   }
 }
