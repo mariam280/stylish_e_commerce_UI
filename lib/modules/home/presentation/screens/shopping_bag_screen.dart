@@ -8,7 +8,7 @@ class ShoppingBagScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.white,
-      body: SafeArea(child: ShoppingBagScreenBody()),
+      body: ShoppingBagScreenBody(),
     );
   }
 }
