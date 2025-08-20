@@ -6,7 +6,7 @@ import 'package:stylish_e_commerce/modules/home/data/models/card_model.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/trendin_product.dart';
 
 class TrendingProductList extends StatelessWidget {
-   TrendingProductList({super.key});
+  TrendingProductList({super.key});
   final List<CardModel> lowerCards = [
     CardModel(
         image: Assets.imagesWatch,
@@ -18,8 +18,7 @@ class TrendingProductList extends StatelessWidget {
         price: '₹750'),
     CardModel(
         image: Assets.imagesBlackjacket,
-        description:
-            'Mammon Women\'s\nHandbag\n(Set of 3, Beige)',
+        description: 'Mammon Women\'s\nHandbag\n(Set of 3, Beige)',
         price: '₹650'),
   ];
   @override
@@ -31,8 +30,8 @@ class TrendingProductList extends StatelessWidget {
         itemCount: lowerCards.length,
         itemBuilder: (context, index) {
           return GestureDetector(
-            onTap: (){
-              GoRouter.of(context).go(AppRouters.cartDetails);
+            onTap: () {
+              GoRouter.of(context).go(AppRouters.shoppingBag);
             },
             child: TrendingProduct(
               cardModel: lowerCards[index],

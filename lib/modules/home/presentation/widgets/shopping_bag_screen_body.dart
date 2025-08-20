@@ -12,24 +12,24 @@ class ShoppingBagScreenBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      
       children: [
         Padding(
-          padding: EdgeInsets.only(left: 16,right: 16,top: 30),
+          padding: EdgeInsets.only(left: 16, right: 16, top: 30),
           child: Column(
             spacing: 30,
             children: [
-          CardDetailsHeader(),
-          ShoppingBagCard(),
-          ShoppingBagCoupon(),
-          Divider(),
-          OrderPaymentDetail(),
-           Divider(),
-           TotalOrder(),
-          ],),
+              ShoppingBagHeader(),
+              ShoppingBagCard(),
+              ShoppingBagCoupon(),
+              Divider(),
+              OrderPaymentDetail(),
+              Divider(),
+              TotalOrder(),
+            ],
+          ),
         ),
-         Spacer(),
-         ShoppingBagFooter(),
+        Spacer(),
+        ShoppingBagFooter(),
       ],
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/modules/payment/presentation/widgets/check_out_info.dart';
+import 'package:stylish_e_commerce/modules/payment/presentation/widgets/check_out_payment_gateways.dart';
 import 'package:stylish_e_commerce/modules/payment/presentation/widgets/check_out_screen_header.dart';
 
 class CheckOutScreenBody extends StatelessWidget {
@@ -18,6 +19,7 @@ class CheckOutScreenBody extends StatelessWidget {
           ),
           CheckOutInfo(),
           Divider(),
+          CheckOutPaymentGateways(),
         ],
       ),
     );

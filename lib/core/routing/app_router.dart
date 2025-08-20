@@ -37,7 +37,7 @@ abstract class AppRouter {
         builder: (context, state) => const GetStartScreen(),
       ),
       GoRoute(
-        path: AppRouters.cartDetails,
+        path: AppRouters.shoppingBag,
         builder: (context, state) => const ShoppingBagScreen(),
       ),
       GoRoute(

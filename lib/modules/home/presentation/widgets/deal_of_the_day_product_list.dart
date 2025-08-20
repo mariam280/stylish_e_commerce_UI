@@ -36,7 +36,7 @@ class DealOfTheDayProductList extends StatelessWidget {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              GoRouter.of(context).go(AppRouters.cartDetails);
+              GoRouter.of(context).go(AppRouters.shoppingBag);
             },
             child: DealOfTheDayProduct(
               cardModel: upperCards[index],
