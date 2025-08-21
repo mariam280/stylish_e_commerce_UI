@@ -1,0 +1,7 @@
+{
+    "screen":"OnboardingScreen",
+    "next":"Next",
+    "prev":"Prev",
+    "getStarted":"Get Started",
+    "skip":"Skip"
+}
