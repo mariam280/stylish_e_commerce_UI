@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_background.dart';
+import 'package:stylish_e_commerce/modules/search/presentation/widgets/search_screen_body.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -7,9 +8,7 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomBackground(
-      child: const Column(children: [
-        Text('SearchScreen...'),
-      ],),
+      child: SafeArea(child: SearchScreenBody()),
     );
   }
 }

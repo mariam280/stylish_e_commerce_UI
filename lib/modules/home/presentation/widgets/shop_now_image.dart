@@ -12,7 +12,7 @@ class ShopNowImage extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         child: Image.asset(
           image,
-          fit: BoxFit.fill,
+          fit: BoxFit.cover,
         ),
       ),
     );

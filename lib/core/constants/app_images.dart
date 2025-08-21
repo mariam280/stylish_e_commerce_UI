@@ -118,6 +118,10 @@ class Assets {
   /// assets/images/mensStarry.png
   static const String imagesMensStarry = "assets/images/mensStarry.png";
 
+  /// Assets for imagesNearestStore
+  /// assets/images/nearest_store.png
+  static const String imagesNearestStore = "assets/images/nearest_store.png";
+
   /// Assets for imagesNike
   /// assets/images/nike.jpg
   static const String imagesNike = "assets/images/nike.jpg";
@@ -150,6 +154,10 @@ class Assets {
   /// assets/images/realme_7.png
   static const String imagesRealme7 = "assets/images/realme_7.png";
 
+  /// Assets for imagesReturnPolicy
+  /// assets/images/return_policy.png
+  static const String imagesReturnPolicy = "assets/images/return_policy.png";
+
   /// Assets for imagesShopNow
   /// assets/images/shopNow.png
   static const String imagesShopNow = "assets/images/shopNow.png";
@@ -177,6 +185,10 @@ class Assets {
   /// Assets for imagesViewAll
   /// assets/images/view_all.png
   static const String imagesViewAll = "assets/images/view_all.png";
+
+  /// Assets for imagesVip
+  /// assets/images/vip.png
+  static const String imagesVip = "assets/images/vip.png";
 
   /// Assets for imagesVisa
   /// assets/images/visa.png
