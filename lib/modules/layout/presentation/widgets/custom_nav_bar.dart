@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/layout/presentation/widgets/main_nav_icon_cart.dart';
 import 'main_nav_icon.dart';
 class CustomNavBar extends StatelessWidget {
@@ -27,12 +28,12 @@ class CustomNavBar extends StatelessWidget {
             children: [
               MainNavIcon(
                 onTap: () => onTap(0),
-                 text: 'home',
+                 text: S.of(context).home,
                  icon: Icons.home_outlined,
                 isActive: currentIndex == 0),
                           MainNavIcon(
                 onTap: () => onTap(1),
-               text: 'wishlist',
+               text: S.of(context).wishlist,
                  icon: Icons.favorite_outline,
                 isActive: currentIndex == 1),
               Transform.translate(
@@ -43,12 +44,12 @@ class CustomNavBar extends StatelessWidget {
               ),
                   MainNavIcon(
                        onTap: () => onTap(3),
-                       text: 'search',
+                       text: S.of(context).search,
                         icon: Icons.search,
                        isActive: currentIndex == 3),
                    MainNavIcon(
                        onTap: () => onTap(4),
-                       text: 'setting',
+                       text: S.of(context).setting,
                         icon: Icons.settings_outlined,
                        isActive: currentIndex == 4),
             ],

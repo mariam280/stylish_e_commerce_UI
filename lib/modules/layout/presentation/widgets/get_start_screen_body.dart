@@ -5,6 +5,7 @@ import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class GetStartScreenBody extends StatelessWidget {
   const GetStartScreenBody({super.key});
@@ -57,7 +58,7 @@ class GetStartScreenBody extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: CustomButon(
-                text: 'Get Started',
+                text: S.of(context).getStarted,
                 onTap: () {
                   GoRouter.of(context).go(AppRouters.layout);
                 },
