@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 import 'package:stylish_e_commerce/modules/setting/presentation/widgets/business_adress_details.dart';
 import 'package:stylish_e_commerce/modules/setting/presentation/widgets/change_language_button.dart';
@@ -22,7 +23,7 @@ class SettingScreenBody extends StatelessWidget {
             Text(
               'Setting',
               style: AppStyles.stylesemiBold18(context)
-                  .copyWith(color: Colors.black),
+                  .copyWith(color: AppColors.secondaryColor(context)),
             ),
             CircleAvatar(
               radius: 50,

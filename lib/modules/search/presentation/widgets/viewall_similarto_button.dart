@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 
 class ViewallSimilartoButton extends StatelessWidget {
@@ -19,7 +20,7 @@ class ViewallSimilartoButton extends StatelessWidget {
             width: 0.2,
           ),
         ),
-        color: Colors.white,
+        color: AppColors.widgetColor(context),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -32,7 +33,7 @@ class ViewallSimilartoButton extends StatelessWidget {
             Text(
               text,
               style: AppStyles.stylesemiBold14(context)
-                  .copyWith(color: Colors.black),
+                  .copyWith(color: AppColors.secondaryColor(context)),
             ),
           ],
         ),

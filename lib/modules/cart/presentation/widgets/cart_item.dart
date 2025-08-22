@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_card.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
@@ -38,7 +39,7 @@ class CartItem extends StatelessWidget {
               children: [
               Text(S.of(context).totalOrder,style: AppStyles.stylesMedium16(context).copyWith(fontSize: 12),),
               Text('\$ 34.00',style: AppStyles.stylesemiBold14(context).copyWith(
-                color: Colors.black,
+                color: AppColors.secondaryColor(context),
                 fontSize: 12,
               ),),
             ],)

@@ -22,7 +22,7 @@ abstract class AppStyles {
 
   static TextStyle styleBold36(BuildContext context) {
     return TextStyle(
-      color: Colors.black,
+      color: AppColors.secondaryColor(context),
       fontSize: getResponsiveFontSize(context, fontSize: 36),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w700,
@@ -49,7 +49,7 @@ abstract class AppStyles {
 
   static TextStyle stylesemiBold34(BuildContext context) {
     return TextStyle(
-      color: Colors.white, 
+      color: AppColors.secondaryColor(context), 
       fontSize: getResponsiveFontSize(context, fontSize: 34), 
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
@@ -68,7 +68,7 @@ abstract class AppStyles {
 
   static TextStyle stylesRegular12(BuildContext context) {
     return TextStyle(
-      color: Colors.black,
+      color: AppColors.secondaryColor(context),
       fontSize: getResponsiveFontSize(context, fontSize: 12), //(10), 16
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
@@ -77,7 +77,7 @@ abstract class AppStyles {
 
   static TextStyle stylesMedium16(BuildContext context) {
     return TextStyle(
-      color: Colors.black,
+      color: AppColors.secondaryColor(context),
       fontSize: getResponsiveFontSize(context, fontSize: 16), //14 ,20
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w500,

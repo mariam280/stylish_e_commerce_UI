@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
+import 'package:stylish_e_commerce/core/themes/app_them.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
@@ -12,16 +14,17 @@ class ShoppingBagFooter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+   final modeProvider= Provider.of<ModeProvider>(context).lightModeEnable;
     return AspectRatio(
       aspectRatio: 393 / 146,
       child: Container(
         decoration: ShapeDecoration(
-            color: Color(0xffF2F2F2),
+            color: AppColors.widgetColor(context),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(40)),
-                side: BorderSide(color: Colors.grey.shade400))),
+                side:modeProvider? BorderSide(color:Colors.grey.shade400): BorderSide.none)),
         child: Center(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
@@ -36,7 +39,7 @@ class ShoppingBagFooter extends StatelessWidget {
                     Text(
                       r'$ 7,000.00',
                       style: AppStyles.stylesemiBold18(context)
-                          .copyWith(color: Colors.black),
+                          .copyWith(color: AppColors.secondaryColor(context)),
                     ),
                     Text(
                       S.of(context).viewdetails,

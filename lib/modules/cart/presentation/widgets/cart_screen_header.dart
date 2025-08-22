@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class CartScreenHeader extends StatelessWidget {
@@ -18,7 +19,7 @@ class CartScreenHeader extends StatelessWidget {
         Align(
           alignment: Alignment.center,
           child: Text(S.of(context).cartScreen,style: AppStyles.stylesemiBold18(context).copyWith(
-            color: Colors.black
+            color: AppColors.secondaryColor(context)
           ),),
         ),
         Divider(
@@ -29,7 +30,7 @@ class CartScreenHeader extends StatelessWidget {
           children: [
           Icon(Icons.location_on_outlined),
           Text(S.of(context).deliveryAddress,style: AppStyles.stylesemiBold14(context).copyWith(
-          color: Colors.black
+          color: AppColors.secondaryColor(context)
         ),),
         ],)
       ],),

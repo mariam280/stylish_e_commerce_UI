@@ -50,7 +50,7 @@ class _BusinessAdressDetailsState extends State<BusinessAdressDetails> {
           Text(
             S.of(context).businessAddress,
             style: AppStyles.stylesemiBold18(context)
-                .copyWith(color: Colors.black),
+                .copyWith(color: AppColors.secondaryColor(context)),
           ),
           SettingItem(
               title: S.of(context).pincode,

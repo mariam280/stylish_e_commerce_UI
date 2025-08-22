@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class OrderPaymentDetail extends StatelessWidget {
@@ -20,16 +21,16 @@ class OrderPaymentDetail extends StatelessWidget {
             Text(
               S.of(context).orderamount,
               style: AppStyles.stylesRegular14(context)
-                  .copyWith(fontSize: 16, color: Colors.black),
+                  .copyWith(fontSize: 16, color: AppColors.secondaryColor(context)),
             ),
             Spacer(),
-            Text(r'$ 7,000.00',style: AppStyles.stylesemiBold18(context).copyWith(color: Colors.black),),
+            Text(r'$ 7,000.00',style: AppStyles.stylesemiBold18(context).copyWith(color: AppColors.secondaryColor(context)),),
           ],
         ),
         Row(
           children: [
             Text(S.of(context).convinience,style: AppStyles.stylesRegular14(context)
-                  .copyWith(fontSize: 16, color: Colors.black),),
+                  .copyWith(fontSize: 16, color: AppColors.secondaryColor(context)),),
             Text(S.of(context).knowMore,style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),
             Spacer(),
             Text(S.of(context).applyCopon,style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),
@@ -38,7 +39,7 @@ class OrderPaymentDetail extends StatelessWidget {
         Row(
           children: [
             Text(S.of(context).deliveryFee,style: AppStyles.stylesRegular14(context).copyWith(
-              color: Colors.black
+              color: AppColors.secondaryColor(context)
             ),),
             Spacer(),
             Text(S.of(context).free,style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),

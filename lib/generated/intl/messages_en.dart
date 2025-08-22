@@ -44,7 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "clicking": MessageLookupByLibrary.simpleMessage("By clicking the "),
     "confirmPassword": MessageLookupByLibrary.simpleMessage("ConfirmPassword"),
     "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
-    "convinience": MessageLookupByLibrary.simpleMessage("Convenience"),
+    "convinience": MessageLookupByLibrary.simpleMessage("Convenience  "),
     "country": MessageLookupByLibrary.simpleMessage("Country"),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create an Account"),
     "deliverBy": MessageLookupByLibrary.simpleMessage("Delivery By"),

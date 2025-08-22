@@ -19,18 +19,18 @@ class ProductDetails extends StatelessWidget {
         Text(
           S.of(context).size,
           style:
-              AppStyles.stylesemiBold14(context).copyWith(color: Colors.black),
+              AppStyles.stylesemiBold14(context).copyWith(color: AppColors.secondaryColor(context)),
         ),
         ProductDetailsList(),
         Text(
           'NIke Sneakers',
           style:
-              AppStyles.stylesemiBold18(context).copyWith(color: Colors.black),
+              AppStyles.stylesemiBold18(context).copyWith(color: AppColors.secondaryColor(context)),
         ),
         Text(
           'Vision Alta Men’s Shoes Size (All Colours)',
           style:
-              AppStyles.stylesRegular14(context).copyWith(color: Colors.black),
+              AppStyles.stylesRegular14(context).copyWith(color: AppColors.secondaryColor(context)),
         ),
         StarWidget(),
         RichText(
@@ -60,7 +60,7 @@ class ProductDetails extends StatelessWidget {
         Text(
           S.of(context).productDetails,
           style:
-              AppStyles.stylesemiBold14(context).copyWith(color: Colors.black),
+              AppStyles.stylesemiBold14(context).copyWith(color: AppColors.secondaryColor(context)),
         ),
         Text(
           'Perhaps the most iconic sneaker of all-time, this original\n"Chicago"? colorway is the cornerstone to any sneaker\ncollection. Made famous in 1985 by Michael Jordan, the\nshoe has stood the test of time, becoming the most\nfamous colorway of the Air Jordan 1. This 2015 release saw\nthe ...',

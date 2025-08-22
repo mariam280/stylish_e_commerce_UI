@@ -1,6 +1,7 @@
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/shop_now_image.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/widgets/custom_dot_shop_now_list.dart';
 
@@ -29,7 +30,7 @@ class _ShopNowHomeState extends State<ShopNowHome> {
     return Container(
       height: MediaQuery.sizeOf(context).height*0.26,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.widgetColor(context),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(

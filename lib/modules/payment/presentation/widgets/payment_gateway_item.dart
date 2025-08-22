@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_them.dart';
 
 class PaymentGatewayItem extends StatelessWidget {
   const PaymentGatewayItem({super.key, required this.image, required this.isSelected});
@@ -8,6 +10,7 @@ class PaymentGatewayItem extends StatelessWidget {
   final bool isSelected;
   @override
   Widget build(BuildContext context) {
+    final modeProvider= Provider.of<ModeProvider>(context).lightModeEnable;
     return Container(
       height: 60,
       decoration: ShapeDecoration(
@@ -18,7 +21,7 @@ class PaymentGatewayItem extends StatelessWidget {
             width: 2,
           ) :BorderSide.none,
         ),
-        color: Color(0xffEEEEEE),
+        color:modeProvider?Color(0xffEEEEEE):Colors.black.withValues(alpha:0.6),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/layout/presentation/widgets/main_nav_icon_cart.dart';
 import 'main_nav_icon.dart';
@@ -12,8 +13,8 @@ class CustomNavBar extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 375 / 85,
       child: Container(
-        decoration: const BoxDecoration(
-          color: Colors.white,
+        decoration:  BoxDecoration(
+          color: AppColors.widgetColor(context),
           border: Border(
           top: BorderSide(
           color: Color(0xffA8A8A9), 

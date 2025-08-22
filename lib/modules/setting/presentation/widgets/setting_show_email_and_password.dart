@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 
 class SettingShowEmailAndPassword extends StatelessWidget {
   const SettingShowEmailAndPassword({
@@ -18,13 +19,13 @@ class SettingShowEmailAndPassword extends StatelessWidget {
             color: Colors.grey,
           ),
         ),
-        color: Colors.white,
+        color: AppColors.widgetColor(context),
       ),
       child: Padding(
         padding: const EdgeInsets.only(top: 10,left: 16),
         child: Text(
           text,
-          style: AppStyles.stylesemiBold14(context).copyWith(color: Colors.black),
+          style: AppStyles.stylesemiBold14(context).copyWith(color: AppColors.secondaryColor(context)),
         ),
       ),
     );

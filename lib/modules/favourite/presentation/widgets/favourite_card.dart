@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/modules/home/data/models/card_model.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/upper_home_card_info.dart';
 
@@ -13,7 +14,7 @@ class FavouriteCard extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 164 / 305,
       child: Card(
-        color: Colors.white,
+        color: AppColors.widgetColor(context),
         elevation: 6, // درجة الظل
         shadowColor: Colors.black.withValues(alpha: 0.3),
         child: UpperHomeCardInfo(

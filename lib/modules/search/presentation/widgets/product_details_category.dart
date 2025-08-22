@@ -12,7 +12,7 @@ class ProductDetailsCategory extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       decoration: BoxDecoration(
-        color:productDetailsModel.isSelected ? AppColors.primaryColor : const Color(0xffF3F3F3),
+        color:productDetailsModel.isSelected ? AppColors.primaryColor : AppColors.widgetColor(context),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: AppColors.primaryColor),
       ),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
+import 'package:stylish_e_commerce/core/themes/app_them.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
@@ -32,18 +35,19 @@ class CustomTextField extends StatelessWidget {
         suffixIcon: Icon(suffixIcon,color:Color(0xffA8A8A9)),
         prefixIcon: Icon(prefixIcon,color: Color(0xffA8A8A9)),
         filled: true,
-        fillColor: Colors.white,
-        border: border(),
-        focusedBorder: border(),
-        enabledBorder: border(),
+        fillColor: AppColors.widgetColor(context),
+        border: border(context),
+        focusedBorder: border(context),
+        enabledBorder: border(context),
       ),
     );
   }
 
-  OutlineInputBorder border() {
+  OutlineInputBorder border(BuildContext context) {
+    final modeProvider = Provider.of<ModeProvider>(context);
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(6),
-      borderSide: BorderSide(color: Colors.white,width: 1),
+      borderSide: BorderSide(color:modeProvider.lightModeEnable? Colors.white: Colors.black,width: 1),
     );
   }
 }

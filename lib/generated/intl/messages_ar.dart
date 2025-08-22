@@ -49,7 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "convinience": MessageLookupByLibrary.simpleMessage("خدمة إضافية"),
     "country": MessageLookupByLibrary.simpleMessage("البلد"),
     "createAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
-    "deliverBy": MessageLookupByLibrary.simpleMessage("التوصيل بحلول"),
+    "deliverBy": MessageLookupByLibrary.simpleMessage("يصل بحلول"),
     "deliveryAddress": MessageLookupByLibrary.simpleMessage("عنوان التوصيل"),
     "deliveryFee": MessageLookupByLibrary.simpleMessage("رسوم التوصيل"),
     "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
@@ -70,7 +70,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "homeScreen": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
     "kids": MessageLookupByLibrary.simpleMessage("أطفال"),
-    "knowMore": MessageLookupByLibrary.simpleMessage("اعرف المزيد"),
+    "knowMore": MessageLookupByLibrary.simpleMessage("    اعرف المزيد"),
     "leastPassword": MessageLookupByLibrary.simpleMessage(
       "كلمة السر يجب ألا تقل عن 6 أحرف",
     ),

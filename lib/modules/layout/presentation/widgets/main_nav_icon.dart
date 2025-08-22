@@ -20,12 +20,12 @@ class MainNavIcon extends StatelessWidget {
         children: [
           Icon(
             icon,
-            color: isActive ? AppColors.primaryColor : Colors.black,
+            color: isActive ? AppColors.primaryColor : AppColors.secondaryColor(context),
           ),
           Text(
             text,
             style: AppStyles.stylesMedium16(context).copyWith(
-              color: isActive ? AppColors.primaryColor : Colors.black,
+              color: isActive ? AppColors.primaryColor : AppColors.secondaryColor(context),
               fontSize: 12,
             ),
           )

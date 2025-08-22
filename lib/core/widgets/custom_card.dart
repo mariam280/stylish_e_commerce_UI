@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 
 class CustomCard extends StatelessWidget {
   const CustomCard({super.key, required this.aspectRatio, this.child});
@@ -9,9 +10,9 @@ class CustomCard extends StatelessWidget {
     return AspectRatio(
       aspectRatio: aspectRatio,
       child: Card(
-        color: Colors.white,
+        color: AppColors.widgetColor(context),
         elevation: 6, // درجة الظل
-        shadowColor: Colors.black.withValues(alpha: 0.3),
+        shadowColor: AppColors.secondaryColor(context).withValues(alpha: 0.3),
         child: child,
       ),
     );

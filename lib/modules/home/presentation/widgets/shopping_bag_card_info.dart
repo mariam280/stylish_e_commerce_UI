@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 
@@ -19,7 +20,7 @@ class ShoppingBagCardInfo extends StatelessWidget {
              fit: BoxFit.scaleDown,
             child: Text(
               'Women’s Casual Wear',
-              style: AppStyles.stylesemiBold14(context).copyWith(color: Colors.black),
+              style: AppStyles.stylesemiBold14(context).copyWith(color: AppColors.secondaryColor(context)),
             ),
           ),
           FittedBox(
@@ -30,12 +31,12 @@ class ShoppingBagCardInfo extends StatelessWidget {
           Row(children: [
            Text(
           S.of(context).deliverBy,
-          style: AppStyles.stylesRegular14(context).copyWith(color: Colors.black),
+          style: AppStyles.stylesRegular14(context).copyWith(color: AppColors.secondaryColor(context)),
         ),
           Text(
           '  10 May 2XXX',
           style: AppStyles.stylesemiBold18(context).copyWith(
-            color: Colors.black,
+            color: AppColors.secondaryColor(context),
             fontSize: 16,
           ),
         ),

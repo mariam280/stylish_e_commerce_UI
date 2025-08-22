@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/payment/presentation/widgets/check_out_details_text.dart';
 
@@ -13,7 +14,7 @@ class CheckOutInfo extends StatelessWidget {
         CheckOutDetailsText(title: S.of(context).order, subTitle: r'$ 7,000'),
         CheckOutDetailsText(title: S.of(context).shipping, subTitle: r'$ 30'),
         CheckOutDetailsText(title: S.of(context).total, subTitle: r'$ 30', style: TextStyle(
-      color: Colors.black,
+      color: AppColors.secondaryColor(context),
       fontSize: 18,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w500,

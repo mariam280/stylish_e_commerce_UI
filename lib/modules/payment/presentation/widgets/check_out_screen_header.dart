@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class CheckOutScreenHeader extends StatelessWidget {
@@ -20,7 +21,7 @@ class CheckOutScreenHeader extends StatelessWidget {
         Text(
           S.of(context).shoppingBagScreen,
           style:
-              AppStyles.stylesemiBold18(context).copyWith(color: Colors.black),
+              AppStyles.stylesemiBold18(context).copyWith(color: AppColors.secondaryColor(context)),
         ),
         Spacer(),
       ],

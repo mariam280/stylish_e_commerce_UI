@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class SortAndFilterWidget extends StatelessWidget {
@@ -12,7 +13,7 @@ class SortAndFilterWidget extends StatelessWidget {
         Text(
           S.of(context).allFeature,
           style:
-              AppStyles.stylesMedium18(context).copyWith(color: Colors.black),
+              AppStyles.stylesMedium18(context).copyWith(color: AppColors.secondaryColor(context)),
         ),
         Spacer(),
         SortAndFilterWidgetItem(
@@ -45,7 +46,7 @@ class SortAndFilterWidgetItem extends StatelessWidget {
         onTap: onTap,
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: AppColors.widgetColor(context),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Padding(
@@ -57,10 +58,12 @@ class SortAndFilterWidgetItem extends StatelessWidget {
                   style: AppStyles.stylesRegular12(context),
                 ),
                 Icon(
+                  color: AppColors.secondaryColor(context),
                   icon1,
                   size: 12,
                 ),
                 Icon(
+                  color: AppColors.secondaryColor(context),
                   icon2,
                   size: 12,
                 ),

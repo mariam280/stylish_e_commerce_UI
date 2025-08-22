@@ -640,9 +640,14 @@ class S {
     );
   }
 
-  /// `Convenience`
+  /// `Convenience  `
   String get convinience {
-    return Intl.message('Convenience', name: 'convinience', desc: '', args: []);
+    return Intl.message(
+      'Convenience  ',
+      name: 'convinience',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Know More`

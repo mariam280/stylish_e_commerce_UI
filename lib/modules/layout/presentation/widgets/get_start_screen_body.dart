@@ -39,7 +39,9 @@ class GetStartScreenBody extends StatelessWidget {
             child: Text(
               'You want\nAuthentic, here\nyou go!',
               textAlign: TextAlign.center,
-              style: AppStyles.stylesemiBold34(context),
+              style: AppStyles.stylesemiBold34(context).copyWith(
+                color: Colors.white
+              ),
             )),
         Positioned(
             left: 0,

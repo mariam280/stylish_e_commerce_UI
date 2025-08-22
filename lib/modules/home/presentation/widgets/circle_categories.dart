@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/home/data/models/circle_category_model.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/circle_category_item.dart';
@@ -20,7 +21,7 @@ class CircleCategories extends StatelessWidget {
       child: Container(
         height: 95,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppColors.widgetColor(context),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Padding(

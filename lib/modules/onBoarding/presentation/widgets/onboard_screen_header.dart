@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class OnboardScreenHeader extends StatelessWidget {
@@ -20,7 +21,7 @@ class OnboardScreenHeader extends StatelessWidget {
                 TextSpan(
                   text: "$pageNumber",
                   style: AppStyles.stylesemiBold18(context).copyWith(
-                    color: Colors.black,
+                    color: AppColors.secondaryColor(context),
                   ),
                 ),
                 TextSpan(
@@ -40,7 +41,7 @@ class OnboardScreenHeader extends StatelessWidget {
             child: Text(
               S.of(context).skip,
               style: AppStyles.stylesemiBold18(context).copyWith(
-                color: Colors.black,
+                color: AppColors.secondaryColor(context),
               ),
             ),
           ),

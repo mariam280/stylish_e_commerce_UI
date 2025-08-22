@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 
 void showSnackBar(BuildContext context, String message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.secondaryColor(context),
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
@@ -11,8 +12,8 @@ void showSnackBar(BuildContext context, String message) {
         duration: const Duration(seconds: 3),
         margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         content: Text(message,
-          style: const TextStyle(
-            color: Colors.white,
+          style:  TextStyle(
+            color: AppColors.secondaryColor(context),
             fontSize: 16,
           ),
         ),

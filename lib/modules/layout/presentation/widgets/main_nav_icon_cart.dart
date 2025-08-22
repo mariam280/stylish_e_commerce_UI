@@ -10,14 +10,14 @@ class MainNavIconCart extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Card(
-        color: isActive ? AppColors.primaryColor : Colors.white,
+        color: isActive ? AppColors.primaryColor : AppColors.widgetColor(context),
         shape: const CircleBorder(),
-        elevation: 6, // درجة الظل
-        shadowColor: Colors.black.withValues(alpha: 0.3),
+        elevation: 10, // درجة الظل
+        shadowColor: AppColors.secondaryColor(context).withValues(alpha: 0.3),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Icon(Icons.shopping_cart_checkout_outlined,
-              color: isActive ? Colors.white: Colors.black),
+              color: isActive ? Colors.white: AppColors.secondaryColor(context)),
         ),
       ),
     );

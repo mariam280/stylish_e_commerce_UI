@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
@@ -38,7 +39,7 @@ class CustomTextFormField extends StatelessWidget {
         suffixIcon: Icon(suffixIcon),
         prefixIcon: Icon(prefixIcon),
         filled: true,
-        fillColor:fillColor?? Color(0xffEDEDED),
+        fillColor: AppColors.widgetColor(context),
         border: border(),
         focusedBorder: border(),
         enabledBorder: border(),

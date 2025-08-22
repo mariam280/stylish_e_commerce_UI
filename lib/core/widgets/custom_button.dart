@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 
 class CustomButon extends StatelessWidget {
   const CustomButon({super.key, this.onTap, required this.text, this.color});
@@ -18,8 +19,8 @@ class CustomButon extends StatelessWidget {
         height: 50,
         child: Center(
           child: Text(text,
-              style: const TextStyle(
-                color: Colors.white,
+              style:  TextStyle(
+                color: AppColors.widgetColor(context),
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               )),

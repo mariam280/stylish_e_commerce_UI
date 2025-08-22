@@ -17,7 +17,7 @@ class CartItemInfo extends StatelessWidget {
            fit: BoxFit.scaleDown,
           child: Text(
             'Women’s Casual Wear',
-            style: AppStyles.stylesemiBold14(context).copyWith(color: Colors.black),
+            style: AppStyles.stylesemiBold14(context).copyWith(color: AppColors.secondaryColor(context)),
           ),
         ),
        Row(
@@ -26,17 +26,17 @@ class CartItemInfo extends StatelessWidget {
         Text('Variations : ',style: AppStyles.stylesMedium16(context).copyWith(fontSize: 12),),
         CustomTextButton(
           side: BorderSide(color: Colors.grey.shade300),
-          text: 'Black', onPressed: (){}, textStyle:const  TextStyle(
+          text: 'Black', onPressed: (){}, textStyle:  TextStyle(
           fontSize: 12,
-          color: Colors.black,
+          color: AppColors.secondaryColor(context),
           fontWeight: FontWeight.w700,
         )),
         CustomSize(w: 8,),
         CustomTextButton(
           side: BorderSide(color: Colors.grey.shade300),
-          text: 'Red', onPressed: (){}, textStyle: const  TextStyle(
+          text: 'Red', onPressed: (){}, textStyle:   TextStyle(
           fontSize: 12,
-          color: Colors.black,
+          color: AppColors.secondaryColor(context),
           fontWeight: FontWeight.w700,
         )),
        ],),
@@ -45,7 +45,7 @@ class CartItemInfo extends StatelessWidget {
           children: [
             Text(
               '4.6 ',
-              style: AppStyles.stylesMedium16(context).copyWith(color: Colors.black)
+              style: AppStyles.stylesMedium16(context).copyWith(color: AppColors.secondaryColor(context))
             ),
             ...List.generate(
             5,
@@ -61,9 +61,9 @@ class CartItemInfo extends StatelessWidget {
           children: [
           CustomTextButton(
           side:   BorderSide(color: Colors.grey.shade300),
-          text: '\$ 34.00', onPressed: (){}, textStyle: const  TextStyle(
+          text: '\$ 34.00', onPressed: (){}, textStyle:   TextStyle(
           fontSize: 10,
-          color: Colors.black,
+          color: AppColors.secondaryColor(context),
           fontWeight: FontWeight.w500,
         )),
         Column(children: [

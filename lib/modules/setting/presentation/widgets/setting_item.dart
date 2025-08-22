@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_text_form_feild.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 
@@ -24,7 +25,7 @@ class SettingItem extends StatelessWidget {
           style: AppStyles.stylesRegular12(context),
         ),
         CustomTextFormField(
-          fillColor: Colors.white,
+          fillColor: AppColors.widgetColor(context),
           controller: controller,
           hint: hint,
           validator: validator,

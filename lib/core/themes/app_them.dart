@@ -13,11 +13,11 @@ class ModeProvider with ChangeNotifier {
   
   void getMode() async {
     lightModeEnable = await GetStorageHelper.getGetStorageData(key: 'lightMode') ?? true;
-    notifyListeners();
+    //notifyListeners();
   }
   ThemeData get themeData {
     return lightModeEnable ?
-     ThemeData.light().copyWith(scaffoldBackgroundColor: Colors.white) : 
+     ThemeData.light().copyWith(scaffoldBackgroundColor: Color(0xffF3F3F3)) : 
      ThemeData.dark();
   }
 
