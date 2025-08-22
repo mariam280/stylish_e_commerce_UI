@@ -51,6 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "deliveryAddress": MessageLookupByLibrary.simpleMessage("عنوان التوصيل"),
     "deliveryFee": MessageLookupByLibrary.simpleMessage("رسوم التوصيل"),
     "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
+    "eMIavailable": MessageLookupByLibrary.simpleMessage("التقسيط متاح"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "enterYourEmail": MessageLookupByLibrary.simpleMessage(

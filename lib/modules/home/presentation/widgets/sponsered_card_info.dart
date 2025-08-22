@@ -3,6 +3,8 @@ import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/shop_now_image.dart';
 
+import '../../../../generated/l10n.dart';
+
 class SponseredCardInfo extends StatelessWidget {
   const SponseredCardInfo({super.key});
 
@@ -14,7 +16,7 @@ class SponseredCardInfo extends StatelessWidget {
       children: [
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 6),
-        child: Text('Sponserd',style: AppStyles.stylesMedium16(context).copyWith(fontSize: 20),),
+        child: Text(S.of(context).sponser,style: AppStyles.stylesMedium16(context).copyWith(fontSize: 20),),
       ),
       ShopNowImage(aspectRatio: 351/286,image: Assets.imagesUptosponsered,),
       Padding(
@@ -22,7 +24,7 @@ class SponseredCardInfo extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-          Text('up to 50% Off',style: AppStyles.styleBold36(context).copyWith(fontSize: 16),),
+          Text(S.of(context).upToOff,style: AppStyles.styleBold36(context).copyWith(fontSize: 16),),
           Icon(Icons.arrow_forward_ios,size: 12,),
         ],),
       )

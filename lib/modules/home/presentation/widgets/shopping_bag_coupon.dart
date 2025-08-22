@@ -4,6 +4,7 @@ import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_text_button.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class ShoppingBagCoupon extends StatelessWidget {
   const ShoppingBagCoupon({super.key});
@@ -13,10 +14,10 @@ class ShoppingBagCoupon extends StatelessWidget {
     return Row(children: [
       Image.asset(Assets.imagesCoupon),
       CustomSize(w: 10,),
-      Text('Apply Coupons',style: AppStyles.stylesMedium16(context),),
+      Text(S.of(context).applyCopon,style: AppStyles.stylesMedium16(context),),
       Spacer(),
       CustomTextButton(
-        text: 'Select', 
+        text: S.of(context).select, 
         onPressed: (){}, 
         textStyle: TextStyle(
           fontSize: 14,

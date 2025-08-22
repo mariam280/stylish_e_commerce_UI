@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class ShoppingBagHeader extends StatelessWidget {
   const ShoppingBagHeader({super.key});
@@ -18,7 +19,7 @@ class ShoppingBagHeader extends StatelessWidget {
         ),
         Spacer(),
         Text(
-          'Shopping Bag',
+          S.of(context).shoppingBagScreen,
           style:
               AppStyles.stylesemiBold18(context).copyWith(color: Colors.black),
         ),

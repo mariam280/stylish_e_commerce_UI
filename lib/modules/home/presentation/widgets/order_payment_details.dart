@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class OrderPaymentDetail extends StatelessWidget {
   const OrderPaymentDetail({super.key});
@@ -11,13 +12,13 @@ class OrderPaymentDetail extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Order Payment Details',
+          S.of(context).orderpaymetDetails,
           style: AppStyles.stylesMedium16(context).copyWith(fontSize: 17),
         ),
         Row(
           children: [
             Text(
-              'Order Amounts',
+              S.of(context).orderamount,
               style: AppStyles.stylesRegular14(context)
                   .copyWith(fontSize: 16, color: Colors.black),
             ),
@@ -27,20 +28,20 @@ class OrderPaymentDetail extends StatelessWidget {
         ),
         Row(
           children: [
-            Text('Convenience',style: AppStyles.stylesRegular14(context)
+            Text(S.of(context).convinience,style: AppStyles.stylesRegular14(context)
                   .copyWith(fontSize: 16, color: Colors.black),),
-            Text('Know More',style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),
+            Text(S.of(context).knowMore,style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),
             Spacer(),
-            Text('Apply Coupon',style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),
+            Text(S.of(context).applyCopon,style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),
           ],
         ),
         Row(
           children: [
-            Text('Delivery Fee',style: AppStyles.stylesRegular14(context).copyWith(
+            Text(S.of(context).deliveryFee,style: AppStyles.stylesRegular14(context).copyWith(
               color: Colors.black
             ),),
             Spacer(),
-            Text('Free',style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),
+            Text(S.of(context).free,style: AppStyles.stylesemiBold18(context).copyWith(fontSize: 12),),
           ],
         )
       ],

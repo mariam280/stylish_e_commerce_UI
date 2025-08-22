@@ -49,6 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "deliveryAddress": MessageLookupByLibrary.simpleMessage("Delivery Address"),
     "deliveryFee": MessageLookupByLibrary.simpleMessage("Delivery Fee"),
     "details": MessageLookupByLibrary.simpleMessage("Details"),
+    "eMIavailable": MessageLookupByLibrary.simpleMessage("EMI  Available "),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
     "enterYourEmail": MessageLookupByLibrary.simpleMessage(

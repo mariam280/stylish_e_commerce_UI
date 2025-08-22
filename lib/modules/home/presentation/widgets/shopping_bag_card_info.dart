@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class ShoppingBagCardInfo extends StatelessWidget {
   const ShoppingBagCardInfo({
@@ -28,7 +29,7 @@ class ShoppingBagCardInfo extends StatelessWidget {
           CustomSize(h: 35,),
           Row(children: [
            Text(
-          'Delivery by ',
+          S.of(context).deliverBy,
           style: AppStyles.stylesRegular14(context).copyWith(color: Colors.black),
         ),
           Text(

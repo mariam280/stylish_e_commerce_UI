@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/shop_now_image.dart';
 
 class HotSummerSaleInfo extends StatelessWidget {
@@ -14,14 +15,14 @@ class HotSummerSaleInfo extends StatelessWidget {
       ShopNowImage(aspectRatio: 343/200,image: Assets.imagesHotsummer,),
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 6),
-        child: Text('New Arrivals ', style: AppStyles.stylesMedium16(context).copyWith(fontSize: 20),),
+        child: Text(S.of(context).newArrival, style: AppStyles.stylesMedium16(context).copyWith(fontSize: 20),),
       ),
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 6),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-          Text('Summer’ 25 Collections',style: AppStyles.stylesRegular12(context).copyWith(fontSize: 16),),
+          Text(S.of(context).summercollectoin,style: AppStyles.stylesRegular12(context).copyWith(fontSize: 16),),
           Image.asset(Assets.imagesViewAll),
         ],),
       )

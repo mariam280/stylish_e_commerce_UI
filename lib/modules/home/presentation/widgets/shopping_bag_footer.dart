@@ -5,6 +5,7 @@ import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class ShoppingBagFooter extends StatelessWidget {
   const ShoppingBagFooter({super.key});
@@ -38,7 +39,7 @@ class ShoppingBagFooter extends StatelessWidget {
                           .copyWith(color: Colors.black),
                     ),
                     Text(
-                      'View Details',
+                      S.of(context).viewdetails,
                       style: AppStyles.stylesemiBold18(context)
                           .copyWith(fontSize: 12),
                     ),
@@ -48,7 +49,7 @@ class ShoppingBagFooter extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.sizeOf(context).width * 0.6,
                   child: CustomButon(
-                    text: 'Proceed to Payment',
+                    text: S.of(context).proceedtopayment,
                     onTap: () {
                       GoRouter.of(context).go(AppRouters.checkOut);
                     },

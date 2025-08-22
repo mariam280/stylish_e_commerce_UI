@@ -610,7 +610,15 @@ class S {
     return Intl.message('Details', name: 'details', desc: '', args: []);
   }
 
-  // skipped getter for the 'eMIavailable ' key
+  /// `EMI  Available `
+  String get eMIavailable {
+    return Intl.message(
+      'EMI  Available ',
+      name: 'eMIavailable',
+      desc: '',
+      args: [],
+    );
+  }
 
   /// `Proceed to Payment`
   String get proceedtopayment {

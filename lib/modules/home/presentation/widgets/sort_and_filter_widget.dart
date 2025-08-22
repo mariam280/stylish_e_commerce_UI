@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class SortAndFilterWidget extends StatelessWidget {
   const SortAndFilterWidget({super.key});
@@ -9,19 +10,19 @@ class SortAndFilterWidget extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'All Feature',
+          S.of(context).allFeature,
           style:
               AppStyles.stylesMedium18(context).copyWith(color: Colors.black),
         ),
         Spacer(),
         SortAndFilterWidgetItem(
-          text: 'Sort ',
+          text: S.of(context).sort,
           icon1: Icons.arrow_upward,
           icon2: Icons.arrow_downward,
           onTap: (){},
         ),
         SortAndFilterWidgetItem(
-          text: 'Filter ',
+          text: S.of(context).filter,
           icon1: Icons.filter_alt_outlined,
           onTap: () {},
         )
