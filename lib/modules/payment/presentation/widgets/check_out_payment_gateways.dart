@@ -4,6 +4,7 @@ import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/helper/custom_payment_dialog.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/payment/presentation/widgets/payment_gateway_item.dart';
 
 class CheckOutPaymentGateways extends StatelessWidget {
@@ -18,7 +19,7 @@ class CheckOutPaymentGateways extends StatelessWidget {
         spacing: 30,
         children: [
           Text(
-            'Payment',
+            S.of(context).payment,
             style: AppStyles.stylesMedium18(context),
           ),
           PaymentGatewayItem(image: Assets.imagesVisa, isSelected: true),
@@ -27,7 +28,7 @@ class CheckOutPaymentGateways extends StatelessWidget {
           PaymentGatewayItem(
               image: Assets.imagesApplepayment, isSelected: false),
           CustomButon(
-            text: 'Continue',
+            text: S.of(context).continueButton,
             onTap: () {
               showPaymentSuccessDialog(context);
             },

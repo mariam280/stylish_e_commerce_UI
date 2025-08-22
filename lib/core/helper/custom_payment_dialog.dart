@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 void showPaymentSuccessDialog(BuildContext context) {
   showDialog(
@@ -29,7 +30,7 @@ void showPaymentSuccessDialog(BuildContext context) {
               ),
             ],),
             Text(
-              "Payment done successfuliy",
+              S.of(context).paymentSuccess,
               style: AppStyles.stylesemiBold14(context).copyWith(color: Colors.black),
             ),
           ],

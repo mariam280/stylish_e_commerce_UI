@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class CheckOutScreenHeader extends StatelessWidget {
   const CheckOutScreenHeader({super.key});
@@ -17,7 +18,7 @@ class CheckOutScreenHeader extends StatelessWidget {
             icon: Icon(Icons.arrow_back_ios)),
         Spacer(),
         Text(
-          'Shopping Bag',
+          S.of(context).shoppingBagScreen,
           style:
               AppStyles.stylesemiBold18(context).copyWith(color: Colors.black),
         ),
