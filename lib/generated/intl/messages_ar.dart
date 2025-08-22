@@ -30,12 +30,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "adress": MessageLookupByLibrary.simpleMessage("العنوان"),
     "allFeature": MessageLookupByLibrary.simpleMessage("جميع المزايا"),
     "applyCopon": MessageLookupByLibrary.simpleMessage("تطبيق القسائم"),
+    "arabic": MessageLookupByLibrary.simpleMessage("عربي"),
     "authScreen": MessageLookupByLibrary.simpleMessage("شاشة المصادقة"),
     "beuty": MessageLookupByLibrary.simpleMessage("جمال"),
     "businessAddress": MessageLookupByLibrary.simpleMessage(
       "بيانات العنوان التجاري",
     ),
     "cartScreen": MessageLookupByLibrary.simpleMessage("عربة التسوق"),
+    "changeLanguage": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
     "changePassword": MessageLookupByLibrary.simpleMessage("تغيير كلمة المرور"),
     "checkoutScreen": MessageLookupByLibrary.simpleMessage("إتمام الشراء"),
     "city": MessageLookupByLibrary.simpleMessage("المدينة"),
@@ -54,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "eMIavailable": MessageLookupByLibrary.simpleMessage("التقسيط متاح"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "english": MessageLookupByLibrary.simpleMessage("انجليزي (امريكا)"),
     "enterYourEmail": MessageLookupByLibrary.simpleMessage(
       "أدخل بريدك الإلكتروني",
     ),

@@ -84,6 +84,9 @@
     "yourcountry":"Your Country",
     "yourcity":"Your City",
     "saveButton":"Save",
+    "arabic":"Arabic",
+    "english":"English (US)",
+    "changeLanguage":"App Language",
 
 
     "shoppingBagScreen":"Shopping Bag",

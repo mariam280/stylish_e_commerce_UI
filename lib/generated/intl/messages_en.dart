@@ -30,12 +30,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "adress": MessageLookupByLibrary.simpleMessage("Address"),
     "allFeature": MessageLookupByLibrary.simpleMessage("All Features"),
     "applyCopon": MessageLookupByLibrary.simpleMessage("Apply coupons"),
+    "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
     "authScreen": MessageLookupByLibrary.simpleMessage("authScreen"),
     "beuty": MessageLookupByLibrary.simpleMessage("Beuty"),
     "businessAddress": MessageLookupByLibrary.simpleMessage(
       "Business Address Details",
     ),
     "cartScreen": MessageLookupByLibrary.simpleMessage("Cart"),
+    "changeLanguage": MessageLookupByLibrary.simpleMessage("App Language"),
     "changePassword": MessageLookupByLibrary.simpleMessage("Chang Password"),
     "checkoutScreen": MessageLookupByLibrary.simpleMessage("Checkout"),
     "city": MessageLookupByLibrary.simpleMessage("City"),
@@ -52,6 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "eMIavailable": MessageLookupByLibrary.simpleMessage("EMI  Available "),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
+    "english": MessageLookupByLibrary.simpleMessage("English (US)"),
     "enterYourEmail": MessageLookupByLibrary.simpleMessage(
       "Enter Your Email Address",
     ),

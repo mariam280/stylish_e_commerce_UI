@@ -78,6 +78,9 @@
     "yourcountry":"بلدك",
     "yourcity":"مدينتك",
     "saveButton":"حفظ",
+    "arabic":"عربي",
+    "english":"انجليزي (امريكا)",
+    "changeLanguage":"لغة التطبيق",
 
     "shoppingBagScreen":"حقيبة التسوق",
     "deliverBy":"التوصيل بحلول",

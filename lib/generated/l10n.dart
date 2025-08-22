@@ -570,6 +570,26 @@ class S {
     return Intl.message('Save', name: 'saveButton', desc: '', args: []);
   }
 
+  /// `Arabic`
+  String get arabic {
+    return Intl.message('Arabic', name: 'arabic', desc: '', args: []);
+  }
+
+  /// `English (US)`
+  String get english {
+    return Intl.message('English (US)', name: 'english', desc: '', args: []);
+  }
+
+  /// `App Language`
+  String get changeLanguage {
+    return Intl.message(
+      'App Language',
+      name: 'changeLanguage',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Shopping Bag`
   String get shoppingBagScreen {
     return Intl.message(
