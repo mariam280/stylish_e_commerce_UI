@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/widgets/auth_header.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/widgets/auth_screen_footer.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/widgets/login_form.dart';
@@ -21,7 +22,7 @@ class LoginScreenBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CustomSize(h: MediaQuery.sizeOf(context).height * 0.05),
-            AuthHeader(title: 'Welcome\nBack!'),
+            AuthHeader(title: S.of(context).loginTitle),
             CustomSize(h: 30),
             LoginForm(),
             Image.asset(
@@ -35,8 +36,8 @@ class LoginScreenBody extends StatelessWidget {
               onTap: () {
                 GoRouter.of(context).go(AppRouters.signUp);
               },
-              text: 'Create An Account',
-              textButton: ' Sign Up',
+              text: S.of(context).createAccount,
+              textButton: S.of(context).signup,
             ),
           ],
         ),

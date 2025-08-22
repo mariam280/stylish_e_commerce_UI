@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "changePassword": MessageLookupByLibrary.simpleMessage("تغيير كلمة المرور"),
     "checkoutScreen": MessageLookupByLibrary.simpleMessage("إتمام الشراء"),
     "city": MessageLookupByLibrary.simpleMessage("المدينة"),
+    "clicking": MessageLookupByLibrary.simpleMessage("بالضغط علي "),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
     ),
@@ -56,6 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "أدخل بريدك الإلكتروني",
     ),
     "fashion": MessageLookupByLibrary.simpleMessage("أزياء"),
+    "fieldRequired": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
     "filter": MessageLookupByLibrary.simpleMessage("تصفية"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
     "forgotScreen": MessageLookupByLibrary.simpleMessage("نسيت\nكلمة المرور؟"),
@@ -65,6 +67,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "homeScreen": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
     "kids": MessageLookupByLibrary.simpleMessage("أطفال"),
     "knowMore": MessageLookupByLibrary.simpleMessage("اعرف المزيد"),
+    "leastPassword": MessageLookupByLibrary.simpleMessage(
+      "كلمة السر يجب ألا تقل عن 6 أحرف",
+    ),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginTitle": MessageLookupByLibrary.simpleMessage("مرحبًا\nبعودتك!"),
     "mens": MessageLookupByLibrary.simpleMessage("رجال"),
@@ -84,6 +89,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "prev": MessageLookupByLibrary.simpleMessage("السابق"),
     "proceedtopayment": MessageLookupByLibrary.simpleMessage("المتابعة للدفع"),
     "productDetails": MessageLookupByLibrary.simpleMessage("تفاصيل المنتج"),
+    "publicOffer": MessageLookupByLibrary.simpleMessage(
+      "أنت توافق\nعلي الشروط العامة",
+    ),
+    "register": MessageLookupByLibrary.simpleMessage("إنشاء حساب "),
+    "samePassword": MessageLookupByLibrary.simpleMessage(
+      "يجب أن تكون كلمة المرور وتأكيد كلمة المرور نفس الشيء",
+    ),
     "screen": MessageLookupByLibrary.simpleMessage("شاشة الترحيب"),
     "search": MessageLookupByLibrary.simpleMessage("بحث"),
     "searchScreen": MessageLookupByLibrary.simpleMessage("شاشة البحث"),
@@ -94,6 +106,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "shipping": MessageLookupByLibrary.simpleMessage("الشحن"),
     "shoppingBagScreen": MessageLookupByLibrary.simpleMessage("حقيبة التسوق"),
     "shoppingList": MessageLookupByLibrary.simpleMessage("قائمة التسوق"),
+    "signup": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "signupTitle": MessageLookupByLibrary.simpleMessage("إنشاء\nحساب"),
     "similarTo": MessageLookupByLibrary.simpleMessage("مشابه لـ"),
     "size": MessageLookupByLibrary.simpleMessage("المقاس: 7UK"),
@@ -104,14 +117,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "submit": MessageLookupByLibrary.simpleMessage("إرسال"),
     "summercollectoin": MessageLookupByLibrary.simpleMessage("مجموعات صيف 25"),
     "textInForgot": MessageLookupByLibrary.simpleMessage(
-      "* سنرسل لك رسالة لتعيين أو إعادة تعيين كلمة المرور الجديدة",
-    ),
-    "textInSignup": MessageLookupByLibrary.simpleMessage(
-      "بالضغط على زر التسجيل، فإنك توافق على الشروط العامة",
+      "* سنرسل لك رسالة لتعيين أو إعادة تعيين\nكلمة المرور الجديدة",
     ),
     "total": MessageLookupByLibrary.simpleMessage("الإجمالي"),
     "totalOrder": MessageLookupByLibrary.simpleMessage("إجمالي الطلب (1)"),
     "upToOff": MessageLookupByLibrary.simpleMessage("خصم حتى 50%"),
+    "validEmail": MessageLookupByLibrary.simpleMessage(
+      "ادخل بريد الكتروني متاح",
+    ),
     "viewSimilar": MessageLookupByLibrary.simpleMessage("عرض المشابه"),
     "viewdetails": MessageLookupByLibrary.simpleMessage("عرض التفاصيل"),
     "wishlist": MessageLookupByLibrary.simpleMessage("قائمة الرغبات"),

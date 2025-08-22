@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/widgets/auth_screen_footer.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/widgets/other_way_auth.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/widgets/sign_up_form.dart';
@@ -21,7 +22,7 @@ class SignUpScreenBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CustomSize(h: MediaQuery.sizeOf(context).height * 0.05),
-            AuthHeader(title: 'Create an\naccount!'),
+            AuthHeader(title: S.of(context).signupTitle),
             CustomSize(h: 30),
             SignUpForm(),
             Image.asset(
@@ -35,8 +36,8 @@ class SignUpScreenBody extends StatelessWidget {
               onTap: () {
                 GoRouter.of(context).go(AppRouters.logIn);
               },
-              text: 'I Already Have an Account',
-              textButton: ' Login',
+              text: S.of(context).IareadyHaveAccount,
+              textButton: S.of(context).login,
             ),
           ],
         ),

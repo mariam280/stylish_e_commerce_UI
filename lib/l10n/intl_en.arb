@@ -15,12 +15,20 @@
     "password":"Password",
     "confirmPassword":"ConfirmPassword",
     "login":"Login",
+    "signup":"Sign Up",
+    "samePassword":"Password and Confirm Password must be same!",
     "createAccount":"Create an Account",
     "submit":"Submit",
     "enterYourEmail":"Enter Your Email Address",
     "IareadyHaveAccount":"I Already Have an Account",
-    "textInSignup":"By clicking the Register button, you agree to the public offer",
-    "textInForgot":"* We will send you a message to set or reset your new password",
+    "clicking":"By clicking the ",
+    "register":"Register ",
+    "publicOffer":"button, you agree\nto the public offer",
+    "textInForgot":"We will send you a message to set or reset\nyour new password",
+    "fieldRequired":"Field is required",
+    "validEmail":"Please enter a valid email",
+    "leastPassword":"Password must be at least 6 characters",
+
 
 
 

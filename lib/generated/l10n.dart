@@ -150,6 +150,21 @@ class S {
     return Intl.message('Login', name: 'login', desc: '', args: []);
   }
 
+  /// `Sign Up`
+  String get signup {
+    return Intl.message('Sign Up', name: 'signup', desc: '', args: []);
+  }
+
+  /// `Password and Confirm Password must be same!`
+  String get samePassword {
+    return Intl.message(
+      'Password and Confirm Password must be same!',
+      name: 'samePassword',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Create an Account`
   String get createAccount {
     return Intl.message(
@@ -185,21 +200,66 @@ class S {
     );
   }
 
-  /// `By clicking the Register button, you agree to the public offer`
-  String get textInSignup {
+  /// `By clicking the `
+  String get clicking {
     return Intl.message(
-      'By clicking the Register button, you agree to the public offer',
-      name: 'textInSignup',
+      'By clicking the ',
+      name: 'clicking',
       desc: '',
       args: [],
     );
   }
 
-  /// `* We will send you a message to set or reset your new password`
+  /// `Register `
+  String get register {
+    return Intl.message('Register ', name: 'register', desc: '', args: []);
+  }
+
+  /// `button, you agree\nto the public offer`
+  String get publicOffer {
+    return Intl.message(
+      'button, you agree\nto the public offer',
+      name: 'publicOffer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We will send you a message to set or reset\nyour new password`
   String get textInForgot {
     return Intl.message(
-      '* We will send you a message to set or reset your new password',
+      'We will send you a message to set or reset\nyour new password',
       name: 'textInForgot',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Field is required`
+  String get fieldRequired {
+    return Intl.message(
+      'Field is required',
+      name: 'fieldRequired',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid email`
+  String get validEmail {
+    return Intl.message(
+      'Please enter a valid email',
+      name: 'validEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must be at least 6 characters`
+  String get leastPassword {
+    return Intl.message(
+      'Password must be at least 6 characters',
+      name: 'leastPassword',
       desc: '',
       args: [],
     );

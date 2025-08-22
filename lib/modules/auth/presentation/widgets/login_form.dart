@@ -7,6 +7,7 @@ import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_text_button.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_text_form_feild.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -35,30 +36,30 @@ class _LoginFormState extends State<LoginForm> {
           CustomTextFormField(
             validator: (value) {
             if (value == null || value.isEmpty) {
-              return 'field is required';
+              return S.of(context).fieldRequired;
             }
             if (!RegExp(r'^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value)) {
-              return 'Please enter a valid email';
+              return S.of(context).validEmail;
             }
             return null;
           },
             controller: emailController,
-            hint: 'Email',
+            hint: S.of(context).email,
             prefixIcon: Icons.person,
           ),
           CustomSize(h: 20),
           CustomTextFormField(
             validator: (value) {
             if (value == null || value.isEmpty) {
-              return 'field is required';
+              return S.of(context).fieldRequired;
             }
             if (value.length < 6) {
-              return 'Password must be at least 6 characters';
+              return S.of(context).leastPassword;
             }
             return null;
           },
             controller: passwordController,
-            hint: 'Password',
+            hint: S.of(context).password,
             prefixIcon: Icons.lock,
             suffixIcon: Icons.visibility_outlined,
           ),
@@ -68,7 +69,7 @@ class _LoginFormState extends State<LoginForm> {
           Align(
             alignment: Alignment.centerRight,
             child: CustomTextButton(
-              text: 'Forgot password?',
+              text: S.of(context).forgotPassword,
               onPressed: () {
                 GoRouter.of(context).go(AppRouters.forgotPassword);
               },
@@ -78,7 +79,7 @@ class _LoginFormState extends State<LoginForm> {
           ),
           CustomSize(h: MediaQuery.sizeOf(context).height * 0.09),
           CustomButon(
-            text: 'Login',
+            text: S.of(context).login,
             onTap: () {
               if (formKey.currentState!.validate()) {
                 GoRouter.of(context).go(AppRouters.getStart);
