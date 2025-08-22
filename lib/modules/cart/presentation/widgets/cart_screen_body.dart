@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/cart/presentation/widgets/adress_info_add_buttons.dart';
 import 'package:stylish_e_commerce/modules/cart/presentation/widgets/cart_item_list.dart';
 import 'package:stylish_e_commerce/modules/cart/presentation/widgets/cart_screen_header.dart';
@@ -18,7 +19,7 @@ class CartScreenBody extends StatelessWidget {
           CartScreenHeader(),
           AdressInfoAddButtons(),
           CustomSize(h: 16,),
-          Text('Shopping List',style: AppStyles.stylesemiBold18(context).copyWith(
+          Text(S.of(context).shoppingList,style: AppStyles.stylesemiBold18(context).copyWith(
             color: Colors.black
           ),),
           Expanded(child: CartItemList()),

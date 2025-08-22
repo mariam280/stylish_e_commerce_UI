@@ -125,7 +125,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "We will send you a message to set or reset\nyour new password",
     ),
     "total": MessageLookupByLibrary.simpleMessage("Total"),
-    "totalOrder": MessageLookupByLibrary.simpleMessage("Total Order(1)"),
+    "totalOrder": MessageLookupByLibrary.simpleMessage("Total Order(1)    :"),
     "upToOff": MessageLookupByLibrary.simpleMessage("up to 50% Off"),
     "validEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter a valid email",

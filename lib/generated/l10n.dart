@@ -445,10 +445,10 @@ class S {
     );
   }
 
-  /// `Total Order(1)`
+  /// `Total Order(1)    :`
   String get totalOrder {
     return Intl.message(
-      'Total Order(1)',
+      'Total Order(1)    :',
       name: 'totalOrder',
       desc: '',
       args: [],

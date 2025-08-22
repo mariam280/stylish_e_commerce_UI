@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_card.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class CartAdressInfo extends StatelessWidget {
   const CartAdressInfo({super.key, this.onTap});
@@ -22,7 +23,7 @@ class CartAdressInfo extends StatelessWidget {
                     onTap: onTap,
                     child: Image.asset( Assets.imagesEditButton)),),
                   Text(
-                  'Adress: ',
+                  S.of(context).address,
                   style: AppStyles.stylesMedium16(context).copyWith(fontSize: 12),
                 ),
                 Row(

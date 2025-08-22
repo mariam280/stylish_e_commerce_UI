@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class CartScreenHeader extends StatelessWidget {
   const CartScreenHeader({
@@ -16,7 +17,7 @@ class CartScreenHeader extends StatelessWidget {
         children: [
         Align(
           alignment: Alignment.center,
-          child: Text('Cart',style: AppStyles.stylesemiBold18(context).copyWith(
+          child: Text(S.of(context).cartScreen,style: AppStyles.stylesemiBold18(context).copyWith(
             color: Colors.black
           ),),
         ),
@@ -27,7 +28,7 @@ class CartScreenHeader extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
           Icon(Icons.location_on_outlined),
-          Text('Delivery Address',style: AppStyles.stylesemiBold14(context).copyWith(
+          Text(S.of(context).deliveryAddress,style: AppStyles.stylesemiBold14(context).copyWith(
           color: Colors.black
         ),),
         ],)

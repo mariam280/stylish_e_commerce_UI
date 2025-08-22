@@ -121,7 +121,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "* سنرسل لك رسالة لتعيين أو إعادة تعيين\nكلمة المرور الجديدة",
     ),
     "total": MessageLookupByLibrary.simpleMessage("الإجمالي"),
-    "totalOrder": MessageLookupByLibrary.simpleMessage("إجمالي الطلب (1)"),
+    "totalOrder": MessageLookupByLibrary.simpleMessage(":  إجمالي الطلب (1)"),
     "upToOff": MessageLookupByLibrary.simpleMessage("خصم حتى 50%"),
     "validEmail": MessageLookupByLibrary.simpleMessage(
       "ادخل بريد الكتروني متاح",

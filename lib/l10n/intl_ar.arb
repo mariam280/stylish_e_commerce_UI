@@ -60,7 +60,7 @@
     "deliveryAddress":"عنوان التوصيل",
     "address":"العنوان",
     "shoppingList":"قائمة التسوق",
-    "totalOrder":"إجمالي الطلب (1)",
+    "totalOrder":":  إجمالي الطلب (1)",
 
     "settingScreen":"الإعدادات",
     "personalDetails":"البيانات الشخصية",

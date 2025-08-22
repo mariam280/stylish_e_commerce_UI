@@ -3,6 +3,7 @@ import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_card.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/cart/presentation/widgets/cart_item_info.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/deal_of_the_day_image.dart';
 
@@ -35,7 +36,7 @@ class CartItem extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-              Text('Total Order (1)   :',style: AppStyles.stylesMedium16(context).copyWith(fontSize: 12),),
+              Text(S.of(context).totalOrder,style: AppStyles.stylesMedium16(context).copyWith(fontSize: 12),),
               Text('\$ 34.00',style: AppStyles.stylesemiBold14(context).copyWith(
                 color: Colors.black,
                 fontSize: 12,
