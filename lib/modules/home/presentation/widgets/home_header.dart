@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
+import 'package:stylish_e_commerce/core/themes/app_them.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});
@@ -8,7 +10,9 @@ class HomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Row(
       children: [
-      Image.asset(Assets.imagesDropmenu,fit: BoxFit.contain,),
+      InkWell(
+        onTap: Provider.of<ModeProvider>(context).toggleMode,
+        child: Image.asset(Assets.imagesDropmenu,fit: BoxFit.contain,)),
       Spacer(),
       Image.asset(Assets.imagesLogo,fit: BoxFit.contain,),
       Spacer(),

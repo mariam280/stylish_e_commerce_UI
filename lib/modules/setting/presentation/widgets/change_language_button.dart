@@ -39,7 +39,7 @@ class ChangeLanguage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<LanguageProvider>(context);
+    final langProvider = Provider.of<LanguageProvider>(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 10,
@@ -48,14 +48,14 @@ class ChangeLanguage extends StatelessWidget {
                 .copyWith(color: Colors.black),),
         ChangeLanguageButton(
           onTap: (){
-            provider.setLanguage('ar');
+            langProvider.setLanguage('ar');
           },
           languageName: S.of(context).arabic,
           image: Assets.imagesEgyptFlag,
         ),
         ChangeLanguageButton(
           onTap: (){
-            provider.setLanguage('en');
+            langProvider.setLanguage('en');
           },
           languageName: S.of(context).english,
           image: Assets.imagesAmerikaFlag,
