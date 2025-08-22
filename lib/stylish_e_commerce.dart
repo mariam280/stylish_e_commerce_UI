@@ -12,7 +12,7 @@ class StylishECommerce extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      locale: DevicePreview.locale(context),
+      locale: const Locale('ar'),
       builder: DevicePreview.appBuilder,
       theme: ThemeData(
         scaffoldBackgroundColor: Color(0xffF3F3F3),

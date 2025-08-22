@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/auth/presentation/screens/login_screen.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/widgets/intro_view_row_bottom.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/widgets/onboard_item_page_view.dart';
@@ -69,8 +70,8 @@ class _OnBoardPageViewState extends State<OnBoardPageView> {
                       curve: Curves.linear);
                 }
               },
-              next: currentPageIndex == 2 ? 'Get Started' : 'Next',
-              back: currentPageIndex == 0 ? '' : 'Prev',
+              next: currentPageIndex == 2 ? S.of(context).getStarted : S.of(context).next,
+              back: currentPageIndex == 0 ? '' : S.of(context).prev,
             ))
       ],
     );

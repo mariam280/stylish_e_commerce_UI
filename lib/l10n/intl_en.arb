@@ -3,5 +3,99 @@
     "next":"Next",
     "prev":"Prev",
     "getStarted":"Get Started",
-    "skip":"Skip"
+    "skip":"Skip",
+    
+
+    "authScreen":"authScreen",
+    "loginTitle":"Welcome\nBack!",
+    "signupTitle":"Create an\naccount",
+    "forgotScreen":"Forgot\npassword?",
+    "forgotPassword":"Forgot Password",
+    "email":"Email",
+    "password":"Password",
+    "confirmPassword":"ConfirmPassword",
+    "login":"Login",
+    "createAccount":"Create an Account",
+    "submit":"Submit",
+    "enterYourEmail":"Enter Your Email Address",
+    "IareadyHaveAccount":"I Already Have an Account",
+    "textInSignup":"By clicking the Register button, you agree to the public offer",
+    "textInForgot":"* We will send you a message to set or reset your new password",
+
+
+
+    "home":"Home",
+    "wishlist":"Wishlist",
+    "search":"earch",
+    "setting":"Setting",
+     
+    "homeScreen":"HomeScreen",
+    "searchany":"Search any Product..",
+    "allFeature":"All Features",
+    "sort":"Sort",
+    "filter":"Filter",
+    "beuty":"Beuty",
+    "fashion":"Fashion",
+    "kids":"Kids",
+    "mens":"Mens",
+    "womens":"Womens",
+    "newArrival":"New Arrivals",
+    "summercollectoin":"Summer’ 25 Collections",
+    "sponser":"Sponserd",
+    "upToOff":"up to 50% Off",
+
+
+    "searchScreen":"SearchScreen",
+    "similarTo":"Similar to",
+    "viewSimilar":"View Similar",
+    "addToCompare":"Add to compare",
+    "size":"Size: 7UK",
+    "productDetails":"Product Details",
+
+
+    "cartScreen":"Cart",
+    "deliveryAddress":"Delivery Address",
+    "address":"Address",
+    "shoppingList":"Shopping List",
+    "totalOrder":"Total Order(1)",
+
+
+    "settingScreen":"Setting",
+    "personalDetails":"Personal Details",
+    "emailAddress":"Email Address",
+    "changePassword":"Chang Password",
+    "businessAddress":"Business Address Details",
+    "pincode":"PinCode",
+    "adress":"Address",
+    "city":"City",
+    "state":"State",
+    "country":"Country",
+
+
+    "shoppingBagScreen":"Shopping Bag",
+    "deliverBy":"Delivery By",
+    "applyCopon":"Apply coupons",
+    "select":"Select",
+    "orderpaymetDetails":"Order Paymet Details",
+    "orderamount":"Order ammount",
+    "convinience":"Convenience",
+    "knowMore":"Know More",
+    "deliveryFee":"Delivery Fee",
+    "free":"Free",
+    "orderTotal":"Order Total",
+    "details":"Details",
+    "eMIavailable ":"EMI  Available ",
+    "proceedtopayment":"Proceed to Payment",
+    "viewdetails":"View Details",
+
+
+    "checkoutScreen":"Checkout",
+    "order":"Order",
+    "shipping":"Shipping",
+    "total":"Total",
+    "payment":"Payment",
+    "continueButton":"Continue",
+    "paymentSuccess":"Payment done successfully"
+
+
 }

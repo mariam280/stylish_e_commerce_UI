@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class OnboardScreenHeader extends StatelessWidget {
   const OnboardScreenHeader({super.key, required this.pageNumber});
@@ -37,7 +38,7 @@ class OnboardScreenHeader extends StatelessWidget {
               GoRouter.of(context).go(AppRouters.logIn);
             },
             child: Text(
-              'Skip',
+              S.of(context).skip,
               style: AppStyles.stylesemiBold18(context).copyWith(
                 color: Colors.black,
               ),
