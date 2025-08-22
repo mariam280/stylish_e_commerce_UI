@@ -72,6 +72,12 @@
     "city":"المدينة",
     "state":"المحافظة",
     "country":"البلد",
+    "yourpincode":"رمزك البريدي",
+    "youraddress":"عنوانك",
+    "yourstate":"محافظتك",
+    "yourcountry":"بلدك",
+    "yourcity":"مدينتك",
+    "saveButton":"حفظ",
 
     "shoppingBagScreen":"حقيبة التسوق",
     "deliverBy":"التوصيل بحلول",

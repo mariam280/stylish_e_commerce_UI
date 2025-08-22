@@ -99,6 +99,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "samePassword": MessageLookupByLibrary.simpleMessage(
       "Password and Confirm Password must be same!",
     ),
+    "saveButton": MessageLookupByLibrary.simpleMessage("Save"),
     "screen": MessageLookupByLibrary.simpleMessage("OnboardingScreen"),
     "search": MessageLookupByLibrary.simpleMessage("earch"),
     "searchScreen": MessageLookupByLibrary.simpleMessage("SearchScreen"),
@@ -134,5 +135,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "viewdetails": MessageLookupByLibrary.simpleMessage("View Details"),
     "wishlist": MessageLookupByLibrary.simpleMessage("Wishlist"),
     "womens": MessageLookupByLibrary.simpleMessage("Womens"),
+    "youraddress": MessageLookupByLibrary.simpleMessage("Your Address"),
+    "yourcity": MessageLookupByLibrary.simpleMessage("Your City"),
+    "yourcountry": MessageLookupByLibrary.simpleMessage("Your Country"),
+    "yourpincode": MessageLookupByLibrary.simpleMessage("Your PinCode"),
+    "yourstate": MessageLookupByLibrary.simpleMessage("Your State"),
   };
 }

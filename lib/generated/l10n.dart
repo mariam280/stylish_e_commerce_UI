@@ -525,6 +525,51 @@ class S {
     return Intl.message('Country', name: 'country', desc: '', args: []);
   }
 
+  /// `Your PinCode`
+  String get yourpincode {
+    return Intl.message(
+      'Your PinCode',
+      name: 'yourpincode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your Address`
+  String get youraddress {
+    return Intl.message(
+      'Your Address',
+      name: 'youraddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your State`
+  String get yourstate {
+    return Intl.message('Your State', name: 'yourstate', desc: '', args: []);
+  }
+
+  /// `Your Country`
+  String get yourcountry {
+    return Intl.message(
+      'Your Country',
+      name: 'yourcountry',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your City`
+  String get yourcity {
+    return Intl.message('Your City', name: 'yourcity', desc: '', args: []);
+  }
+
+  /// `Save`
+  String get saveButton {
+    return Intl.message('Save', name: 'saveButton', desc: '', args: []);
+  }
+
   /// `Shopping Bag`
   String get shoppingBagScreen {
     return Intl.message(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/shop_now_image.dart';
 import 'package:stylish_e_commerce/modules/search/presentation/widgets/product_details.dart';
 import 'package:stylish_e_commerce/modules/search/presentation/widgets/search_header.dart';
@@ -38,8 +39,8 @@ class SearchScreenBody extends StatelessWidget {
           Row(
           spacing: 4,
           children: [
-          Expanded(child: ViewallSimilartoButton(text: 'View Similar', icon: Icons.visibility_outlined)),
-          Expanded(child: ViewallSimilartoButton(text: 'Add To Compare', icon: Icons.local_offer_outlined)),
+          Expanded(child: ViewallSimilartoButton(text: S.of(context).viewSimilar, icon: Icons.visibility_outlined)),
+          Expanded(child: ViewallSimilartoButton(text: S.of(context).addToCompare, icon: Icons.local_offer_outlined)),
         ],),
           SimilarTo(),
           CustomSize(h:MediaQuery.sizeOf(context).height*0.05),

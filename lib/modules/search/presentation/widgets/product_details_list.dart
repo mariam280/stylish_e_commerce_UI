@@ -44,25 +44,6 @@ class _ProductDetailsListState extends State<ProductDetailsList> {
                 )),
           )),
           ],),
-          
-          //  Padding(
-          //   padding: const EdgeInsets.only(right: 16),
-          //   child: InkWell(
-          //       onTap: () {
-          //         setState(() {
-          //           {
-          //             for (var element in categories) {
-          //               element.isSelected = false;
-          //             }
-          //             categories[index].isSelected = true;
-          //           }
-          //         });
-          //       },
-          //       child: ProductDetailsCategory(
-          //         productDetailsModel: categories[index],
-          //       )),
-          // );
-        
       );
   }
 }

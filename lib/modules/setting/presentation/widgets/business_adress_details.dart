@@ -3,6 +3,7 @@ import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/setting/presentation/widgets/setting_item.dart';
 
 class BusinessAdressDetails extends StatefulWidget {
@@ -47,67 +48,67 @@ class _BusinessAdressDetailsState extends State<BusinessAdressDetails> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Business address Details',
+            S.of(context).businessAddress,
             style: AppStyles.stylesemiBold18(context)
                 .copyWith(color: Colors.black),
           ),
           SettingItem(
-              title: 'PinCode',
-              hint: 'your pinCode',
+              title: S.of(context).pincode,
+              hint: S.of(context).yourpincode,
               controller: pinController,
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'field is required';
+                  return S.of(context).fieldRequired;
                 }
                 return null;
               }),
           SettingItem(
-            title: 'Address',
-            hint: 'your address',
+            title: S.of(context).address,
+            hint: S.of(context).youraddress,
             controller: addressController,
             validator:(value) {
                 if (value == null || value.isEmpty) {
-                  return 'field is required';
+                  return S.of(context).fieldRequired;
                 }
                 return null;
               }
           ),
           SettingItem(
-            title: 'City',
-            hint: 'your city',
+            title: S.of(context).city,
+            hint: S.of(context).yourcity,
             controller: cityController,
             validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'field is required';
+                  return S.of(context).fieldRequired;
                 }
                 return null;
               }
           ),
           SettingItem(
-            title: 'State',
-            hint: 'your state',
+            title: S.of(context).state,
+            hint: S.of(context).yourstate,
             controller: stateController,
             validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'field is required';
+                  return S.of(context).fieldRequired;
                 }
                 return null;
               }
           ),
           SettingItem(
-            title: 'Country',
-            hint: 'your country',
+            title: S.of(context).country,
+            hint: S.of(context).yourcountry,
             controller: countryController,
             validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'field is required';
+                  return S.of(context).fieldRequired;
                 }
                 return null;
               }
           ),
           CustomSize(h:30),
           CustomButon(
-            text: 'Save',
+            text: S.of(context).saveButton,
             color: AppColors.primaryColor,
             onTap: () {
               if (formKey.currentState!.validate()) {}

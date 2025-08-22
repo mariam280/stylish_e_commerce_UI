@@ -78,6 +78,12 @@
     "city":"City",
     "state":"State",
     "country":"Country",
+    "yourpincode":"Your PinCode",
+    "youraddress":"Your Address",
+    "yourstate":"Your State",
+    "yourcountry":"Your Country",
+    "yourcity":"Your City",
+    "saveButton":"Save",
 
 
     "shoppingBagScreen":"Shopping Bag",

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/core/constants/app_images.dart';
 import 'package:stylish_e_commerce/core/constants/app_styles.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
+import 'package:stylish_e_commerce/generated/l10n.dart';
 import 'package:stylish_e_commerce/modules/home/presentation/widgets/star_widget.dart';
 import 'package:stylish_e_commerce/modules/search/presentation/widgets/nearest_vip_return.dart';
 import 'package:stylish_e_commerce/modules/search/presentation/widgets/product_details_list.dart';
@@ -16,7 +17,7 @@ class ProductDetails extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Size: 7UK',
+          S.of(context).size,
           style:
               AppStyles.stylesemiBold14(context).copyWith(color: Colors.black),
         ),
@@ -57,7 +58,7 @@ class ProductDetails extends StatelessWidget {
           ),
         ),
         Text(
-          'Product Details',
+          S.of(context).productDetails,
           style:
               AppStyles.stylesemiBold14(context).copyWith(color: Colors.black),
         ),

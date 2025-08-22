@@ -97,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "samePassword": MessageLookupByLibrary.simpleMessage(
       "يجب أن تكون كلمة المرور وتأكيد كلمة المرور نفس الشيء",
     ),
+    "saveButton": MessageLookupByLibrary.simpleMessage("حفظ"),
     "screen": MessageLookupByLibrary.simpleMessage("شاشة الترحيب"),
     "search": MessageLookupByLibrary.simpleMessage("بحث"),
     "searchScreen": MessageLookupByLibrary.simpleMessage("شاشة البحث"),
@@ -130,5 +131,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "viewdetails": MessageLookupByLibrary.simpleMessage("عرض التفاصيل"),
     "wishlist": MessageLookupByLibrary.simpleMessage("قائمة الرغبات"),
     "womens": MessageLookupByLibrary.simpleMessage("نساء"),
+    "youraddress": MessageLookupByLibrary.simpleMessage("عنوانك"),
+    "yourcity": MessageLookupByLibrary.simpleMessage("مدينتك"),
+    "yourcountry": MessageLookupByLibrary.simpleMessage("بلدك"),
+    "yourpincode": MessageLookupByLibrary.simpleMessage("رمزك البريدي"),
+    "yourstate": MessageLookupByLibrary.simpleMessage("محافظتك"),
   };
 }
