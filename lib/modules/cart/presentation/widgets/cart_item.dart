@@ -33,7 +33,6 @@ class CartItem extends StatelessWidget {
             Divider(
               thickness: 0.3,
             ),
-            CustomSize(h: 10,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

@@ -3,10 +3,10 @@ import 'package:stylish_e_commerce/core/cache/get_storage_helper.dart';
 
 
 class LanguageProvider extends ChangeNotifier {
-  Locale _locale = const Locale('en'); // اللغة الافتراضية
+  Locale _locale = const Locale('en'); 
 
   LanguageProvider() {
-    // لما الاب يفتح نقرأ اللغة اللي متخزنة
+    
     String? langCode = GetStorageHelper.getGetStorageData(key: 'lang');
     if (langCode != null) {
       _locale = Locale(langCode);

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:stylish_e_commerce/core/cache/get_storage_helper.dart';
 import 'package:stylish_e_commerce/core/themes/app_language.dart';
-import 'package:stylish_e_commerce/core/themes/app_them.dart'; // ده الملف اللي فيه ModeProvider
+import 'package:stylish_e_commerce/core/themes/app_them.dart'; 
 import 'package:stylish_e_commerce/stylish_e_commerce.dart';
 
 Future<void> main() async {
@@ -12,11 +12,11 @@ Future<void> main() async {
 
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (context) => MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (_) => LanguageProvider()),
-          ChangeNotifierProvider(create: (_) => ModeProvider()..getMode()),
+          ChangeNotifierProvider(create: (_) => ModeProvider()),
         ],
         child: const StylishECommerce(),
       ),

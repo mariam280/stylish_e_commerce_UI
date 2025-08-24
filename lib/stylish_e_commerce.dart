@@ -31,4 +31,4 @@ class StylishECommerce extends StatelessWidget {
   }
 }
 
-// locale: const Locale('ar'),
+
