@@ -8,7 +8,7 @@ class SponseredCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomCard(
-      aspectRatio: 345/347,
+      aspectRatio: 354/374,
       child: SponseredCardInfo());
   }
 }

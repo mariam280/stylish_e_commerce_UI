@@ -18,7 +18,7 @@ class SponseredCardInfo extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 6),
         child: Text(S.of(context).sponser,style: AppStyles.stylesMedium16(context).copyWith(fontSize: 20),),
       ),
-      ShopNowImage(aspectRatio: 351/286,image: Assets.imagesUptosponsered,),
+      ShopNowImage(aspectRatio: 349/286,image: Assets.imagesUptosponsered,),
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 6),
         child: Row(
