@@ -1,4 +1,4 @@
-🛍️ Stylish E-Commerce
+🛍️ Stylish E-Commerce  (focused on UI)
 
 A Flutter-based mobile application that provides a modern and seamless shopping experience.
 
