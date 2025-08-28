@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stylish_e_commerce/core/themes/app_them.dart';
+import 'package:stylish_e_commerce/modules/setting/presentation/logic/app_them.dart';
 
 abstract class AppColors {
   static const primaryColor = Color(0xffF83758);

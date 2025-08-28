@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_styles.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 import 'package:stylish_e_commerce/modules/search/data/models/product_details_model.dart';
 

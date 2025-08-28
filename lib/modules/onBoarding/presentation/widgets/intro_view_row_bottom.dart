@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_e_commerce/modules/onBoarding/presentation/widgets/dots_indicator.dart';
 
-import '../../../../core/constants/app_styles.dart';
+import '../../../../core/themes/app_styles.dart';
 
 class IntroViewRowBottom extends StatelessWidget {
   const IntroViewRowBottom({

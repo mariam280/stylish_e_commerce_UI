@@ -27,22 +27,25 @@ class _ShopNowHomeState extends State<ShopNowHome> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.sizeOf(context).height*0.26,
-      decoration: BoxDecoration(
-        color: AppColors.widgetColor(context),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Column(
-        spacing: 8,
-        children: [
-          ExpandablePageView(controller: pageController, children: [
-            ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
-            ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
-            ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
-          ]),
-          CustomDotShopNowList(currentPageIndex: currentPageIndex)
-        ],
+    return AspectRatio(
+      aspectRatio: 343/220,
+      child: Container(
+        //height: MediaQuery.sizeOf(context).height*0.26,
+        decoration: BoxDecoration(
+          color: AppColors.widgetColor(context),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Column(
+          spacing: 8,
+          children: [
+            ExpandablePageView(controller: pageController, children: [
+              ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
+              ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
+              ShopNowImage(aspectRatio: 343 / 189,image: Assets.imagesShopNow,),
+            ]),
+            CustomDotShopNowList(currentPageIndex: currentPageIndex)
+          ],
+        ),
       ),
     );
   }

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:stylish_e_commerce/core/routing/app_router.dart';
-import 'package:stylish_e_commerce/core/themes/app_language.dart';
-import 'package:stylish_e_commerce/core/themes/app_them.dart';
+import 'package:stylish_e_commerce/modules/setting/presentation/logic/app_language.dart';
+import 'package:stylish_e_commerce/modules/setting/presentation/logic/app_them.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';
 
 class StylishECommerce extends StatelessWidget {

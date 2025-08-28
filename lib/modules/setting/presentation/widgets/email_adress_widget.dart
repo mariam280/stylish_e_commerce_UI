@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_styles.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_text_button.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 import 'package:stylish_e_commerce/modules/setting/presentation/widgets/setting_show_email_and_password.dart';

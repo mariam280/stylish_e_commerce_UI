@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_styles.dart';
 import 'package:stylish_e_commerce/core/routing/app_routers.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
-import 'package:stylish_e_commerce/core/themes/app_them.dart';
+import 'package:stylish_e_commerce/modules/setting/presentation/logic/app_them.dart';
 import 'package:stylish_e_commerce/core/widgets/custom_button.dart';
 import 'package:stylish_e_commerce/core/widgets/size.dart';
 import 'package:stylish_e_commerce/generated/l10n.dart';

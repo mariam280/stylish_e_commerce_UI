@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_styles.dart';
 import 'package:stylish_e_commerce/core/themes/app_colors.dart';
 
 class SettingShowEmailAndPassword extends StatelessWidget {

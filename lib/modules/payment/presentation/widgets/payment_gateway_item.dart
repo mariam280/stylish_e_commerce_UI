@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stylish_e_commerce/core/constants/app_styles.dart';
-import 'package:stylish_e_commerce/core/themes/app_them.dart';
+import 'package:stylish_e_commerce/core/themes/app_styles.dart';
+import 'package:stylish_e_commerce/modules/setting/presentation/logic/app_them.dart';
 
 class PaymentGatewayItem extends StatelessWidget {
   const PaymentGatewayItem({super.key, required this.image, required this.isSelected});

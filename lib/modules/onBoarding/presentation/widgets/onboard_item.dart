@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_e_commerce/core/constants/app_styles.dart';
+import 'package:stylish_e_commerce/core/themes/app_styles.dart';
 
 class OnboardItem extends StatelessWidget {
   const OnboardItem({super.key, required this.image, required this.title, required this.description});
