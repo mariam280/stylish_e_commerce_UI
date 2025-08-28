@@ -1,16 +1,37 @@
-# stylish_e_commerce
+🛍️ Stylish E-Commerce  (focused on UI)
 
-A new Flutter project.
+A Flutter-based mobile application that provides a modern and seamless shopping experience.
 
-## Getting Started
+The app showcases products in a clean and elegant UI, supporting both light and dark modes with local storage to persist user preferences.
+It follows the MVVM architecture pattern combined with Clean Architecture principles, ensuring modularity, scalability, and maintainability.
+For state management, it uses Provider, and for local data persistence it integrates GetStorage.
 
-This project is a starting point for a Flutter application.
+🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+Elegant and responsive UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Light & Dark Mode with local storage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Localization support
+
+MVVM + Clean Architecture
+
+State management with Provider
+
+Local persistence using GetStorage
+
+🛠️ Technologies Used
+
+Flutter
+
+Dart
+
+Provider (State Management)
+
+GetStorage (Local Persistence)
+
+MVVM + Clean Architecture
+
+🔗 Project Link
+
+[GitHub Repository](https://github.com/mariam280/stylish_e_commerce)
