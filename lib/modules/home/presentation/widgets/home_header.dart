@@ -8,15 +8,28 @@ class HomeHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    final modeProvider = context.watch<ModeProvider>();
+    return Row(
       children: [
-      InkWell(
-        onTap: Provider.of<ModeProvider>(context).toggleMode,
-        child: Image.asset(Assets.imagesDropmenu,fit: BoxFit.contain,)),
-      Spacer(),
-      Image.asset(Assets.imagesLogo,fit: BoxFit.contain,),
-      Spacer(),
-      CircleAvatar(backgroundImage: AssetImage(Assets.imagesAvatar,),),
-    ],);
+        IconButton(
+            onPressed: () {
+              modeProvider.toggleMode();
+            },
+            icon: modeProvider.lightModeEnable
+                ? const Icon(Icons.nightlight_round)
+                : const Icon(Icons.sunny)),
+        Spacer(),
+        Image.asset(
+          Assets.imagesLogo,
+          fit: BoxFit.contain,
+        ),
+        Spacer(),
+        CircleAvatar(
+          backgroundImage: AssetImage(
+            Assets.imagesAvatar,
+          ),
+        ),
+      ],
+    );
   }
 }

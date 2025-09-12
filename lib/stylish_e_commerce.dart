@@ -16,6 +16,8 @@ class StylishECommerce extends StatelessWidget {
    final modeProvider = Provider.of<ModeProvider>(context);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
+      themeAnimationCurve: Curves.fastEaseInToSlowEaseOut,
+      themeAnimationDuration: const Duration(milliseconds: 1500),
       locale: langProvider.locale,
       builder: DevicePreview.appBuilder,
       theme: modeProvider.themeData,
