@@ -80,11 +80,10 @@ class _LoginFormState extends State<LoginForm> {
           CustomSize(h: MediaQuery.sizeOf(context).height * 0.09),
           CustomButon(
             text: S.of(context).login,
-            onTap: () {
-               GoRouter.of(context).go(AppRouters.getStart);
-              // if (formKey.currentState!.validate()) {
-               
-              // }
+            onTap: () {  
+              if (formKey.currentState!.validate()) {
+                GoRouter.of(context).go(AppRouters.getStart);
+              }
             },
             color: AppColors.primaryColor,
           ),
